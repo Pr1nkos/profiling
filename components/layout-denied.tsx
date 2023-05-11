@@ -1,14 +1,14 @@
 import Header from "./header"
 import Footer from "./footer"
 import type { ReactNode } from "react"
-import Navbar from '../components/Navbar'
+import Navbar from './Navbar'
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function AccessDenied() {
   return (
     <>
       <Header />
       <Navbar />
-      <main>{children}</main>
+      <main><p id ="font-common">Доступ запрещён</p></main>
       <Footer />
     </>
   )
