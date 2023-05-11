@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Bender";
+  src: url("../public/Jovanny Lemonad - Bender-Bold.otf");
+}
+
+* {
+  outline: 1px solid red;
+  font-family: Bender;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 100, 100, 100;
+    --background-end-rgb: 100, 100, 100;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+#font-common {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.navbar {
+  margin: auto;
+  width: 100%;
+  z-index: 10;
+  transition-timing-function: ease-in;
+  transition-duration: 300;
+}
+
+#headers {
+  margin: auto;
+  font-size: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1;
+  color: white;
+}
+.submenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+#submenu-mobile-true {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  transition-timing-function: ease-in;
+  transition-duration: 300;
+  list-style: none;
+}
+
+#submenu-mobile-true ul {
+  padding-inline-start: 0;
+}
+
+
+#submenu-mobile-false {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  transition-timing-function: ease-in;
+  transition-duration: 300;
+  list-style: none;
+}
+
+#icon-mobile {
+  display: block;
+  z-index: 10;
+}
+
+@media (max-width: 800px) {
+  .submenu {
+    display: none;
+  }
+  #submenu-mobile {
+    display: flex;
+
+  }
+  #submenu-mobile-true ul {
+    list-style-type: none;
+  }
+  .navbar {
+    position: None;
+  }
+}
+
+@media (min-width: 800px) {
+  .submenu {
+    display: flex;
+  }
+  #submenu-mobile {
+    display: none;
+  }
+  #icon-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  #headers {
+    font-size: 1vw;
+  }
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
