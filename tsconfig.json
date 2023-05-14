@@ -30,6 +30,6 @@
     "components/Navbar.tsx",
     "@prisma/client",
     "pages/api/auth/[...nextauth].ts"
-  ],
+, "pages/auth/signin.tsx"  ],
   "exclude": ["node_modules"]
 }

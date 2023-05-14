@@ -152,3 +152,9 @@ body {
     font-size: 3.5rem;
   }
 }
+
+#signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

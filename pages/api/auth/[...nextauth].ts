@@ -105,14 +105,14 @@ export const authOptions: NextAuthOptions = {
   },
   callbacks: {
     session: async ({ session, token }) => {
-      if (session?.user) {
-        session.user.id = token.uid;
+      if (session?.user && token) {
+        session.user.role = token.role;
       }
       return session;
     },
     jwt: async ({ user, token }) => {
       if (user) {
-        token.uid = user.id;
+        token.role = user.role;
       }
       return token;
     },
@@ -121,11 +121,9 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
-  // callbacks: {
-  //   async jwt({ token }) {
-  //     token.userRole = "admin";
-  //     return token;
-  //   },
+  pages: {
+    signIn:"/auth/signin"
+  }
 };
 
 export default NextAuth(authOptions);
