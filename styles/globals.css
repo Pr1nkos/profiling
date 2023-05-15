@@ -34,8 +34,13 @@ body {
 #font-common {
   font-size: 6vw;
   text-align: center;
+  animation: fadeIn 3s;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .navbar {
   margin: auto;
   width: 100%;
@@ -151,4 +156,10 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+#signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
