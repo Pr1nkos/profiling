@@ -38,8 +38,12 @@ body {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .navbar {
   margin: auto;
@@ -88,7 +92,6 @@ body {
   padding-inline-start: 0;
 }
 
-
 #submenu-mobile-false {
   position: absolute;
   top: 0;
@@ -118,7 +121,6 @@ body {
   }
   #submenu-mobile {
     display: flex;
-
   }
   #submenu-mobile-true ul {
     list-style-type: none;
