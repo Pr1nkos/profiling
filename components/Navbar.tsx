@@ -16,13 +16,13 @@ export default function Navbar() {
           <Link href="/">Домашняя страница</Link>
         </li>
         <li className="p-4 hover:text-gray-500">
-          <Link href="/education">Модули образования</Link>
+          <Link href="/education">Курс по профайлингу</Link>
         </li>
         <li className="p-4 hover:text-gray-500">
           <Link href="/emotions">Изучение различных эмоций</Link>
         </li>
         <li className="p-4 hover:text-gray-500">
-          <Link href="/lie">Классификация лжи</Link>
+          <Link href="/lie">Тренажер лжи</Link>
         </li>
         <li className="p-4 hover:text-gray-500">
           <Link href="/tests">Тестовая система</Link>
@@ -48,13 +48,13 @@ export default function Navbar() {
             <Link href="/">Домашняя страница</Link>
           </li>
           <li className="p-4 text-4xl hover:text-gray-500">
-            <Link href="/education">Модули образования</Link>
+            <Link href="/education">Курс по профайлингу</Link>
           </li>
           <li className="p-4 text-4xl hover:text-gray-500">
             <Link href="/emotions">Изучение различных эмоций</Link>
           </li>
           <li className="p-4 text-4xl hover:text-gray-500">
-            <Link href="/lie">Классификация лжи</Link>
+            <Link href="/lie">Тренажер лжи</Link>
           </li>
           <li className="p-4 text-4xl hover:text-gray-500">
             <Link href="/tests">Тестовая система</Link>

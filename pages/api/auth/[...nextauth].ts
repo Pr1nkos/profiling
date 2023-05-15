@@ -26,7 +26,11 @@ export const authOptions: NextAuthOptions = {
       // e.g. domain, username, password, 2FA token, etc.
       // You can pass any HTML attribute to the <input> tag through the object.
       credentials: {
-        username: { label: "Email", type: "text", placeholder: "email@gmail.com" },
+        username: {
+          label: "Email",
+          type: "text",
+          placeholder: "email@gmail.com",
+        },
         password: { label: "Пароль", type: "password" },
       },
       async authorize(credentials) {
@@ -101,26 +105,25 @@ export const authOptions: NextAuthOptions = {
   },
   callbacks: {
     session: async ({ session, token }) => {
-      if (session?.user) {
-        session.user.id = token.uid;
+      if (session?.user && token) {
+        session.user.role = token.role;
       }
       return session;
     },
     jwt: async ({ user, token }) => {
       if (user) {
-        token.uid = user.id;
+        token.role = user.role;
       }
       return token;
     },
+    
   },
   session: {
     strategy: "jwt",
   },
-  // callbacks: {
-  //   async jwt({ token }) {
-  //     token.userRole = "admin";
-  //     return token;
-  //   },
+  pages: {
+    signIn:"/auth/signin"
+  }
 };
 
 export default NextAuth(authOptions);
