@@ -1,20 +1,17 @@
-import Image from 'next/image'
+import Image from "next/image"
 import Layout from "../components/layout"
-import { Inter } from 'next/font/google'
-import Navbar  from '../components/Navbar'
+import { Inter } from "next/font/google"
+import Navbar from "../components/Navbar"
+import styles from "../styles/Tests.module.css"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
     <Layout>
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <p id ="font-common">
-        Тесты
-      </p>
-    </main>
+      <main className={styles.main}>
+        <p id='font-common'>Тесты</p>
+      </main>
     </Layout>
   )
 }
