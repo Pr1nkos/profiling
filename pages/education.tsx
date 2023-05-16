@@ -2,11 +2,9 @@ import { useState, useEffect } from "react"
 import { useSession } from "next-auth/react"
 import Layout from "../components/layout"
 import AccessDenied from "../components/layout-denied"
-import styles from "../styles/Education.module.css"
 
 export default function Home() {
   const { data: session } = useSession()
-  const [content, setContent] = useState()
 
   // Fetch content from protected route
   useEffect(() => {}, [session])

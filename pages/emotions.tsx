@@ -1,6 +1,5 @@
 import Layout from "../components/layout"
 import { Inter } from "next/font/google"
-import styles from "../styles/Emotions.module.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -50,13 +49,13 @@ export default function Home() {
           которые являются вариациями на общую тему.
         </p>
         <p>
-          <img src='./anger.jpg'></img>
-          <img src='./contempt.jpg'></img>
-          <img src='./disgust.jpg'></img>
-          <img src='./enjoyment.jpg'></img>
-          <img src='./fear.jpg'></img>
-          <img src='./sadness.jpg'></img>
-          <img src='./surprise.jpg'></img>
+          <img src='./imgs/anger.jpg'></img>
+          <img src='./imgs/contempt.jpg'></img>
+          <img src='./imgs/disgust.jpg'></img>
+          <img src='./imgs/enjoyment.jpg'></img>
+          <img src='./imgs/fear.jpg'></img>
+          <img src='./imgs/sadness.jpg'></img>
+          <img src='./imgs/surprise.jpg'></img>
         </p>
         <p>Что делает нас эмоциональными?</p>
         <p>
