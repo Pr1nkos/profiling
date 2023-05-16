@@ -1,8 +1,6 @@
 import Image from "next/image"
 import Layout from "../components/layout"
 import { Inter } from "next/font/google"
-import Navbar from "../components/Navbar"
-import styles from "../styles/Lie.module.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
