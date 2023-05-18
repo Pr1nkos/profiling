@@ -1,4 +1,3 @@
-import Layout from "../components/layout"
 import Head from "next/head"
 import Email from "../components/Email"
 import Loader from "../components/Loader"
@@ -10,7 +9,7 @@ import About from "../sections/About"
 
 import Experience from "../sections/Experience"
 import NavbarRoute from "../components/Navbar"
-
+import Contacts from "../sections/Contact"
 export default function IndexPage() {
   const [isLoading, setIsLoading] = useState(true)
   const [showContent, setShowContent] = useState(false)
@@ -21,8 +20,9 @@ export default function IndexPage() {
   }
 
   return (
-    <Layout>
-      <div className='app'>
+    <>
+      <NavbarRoute />
+      <div className='bg-gradient-to-bl from-green-200 to-purple-200'>
         <Head>
           <title>Профайлинг</title>
           <link rel='shortcut icon' href='/favicon.ico' />
@@ -40,6 +40,7 @@ export default function IndexPage() {
         )}
         <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />
       </div>
-    </Layout>
+      <Contacts />
+    </>
   )
 }

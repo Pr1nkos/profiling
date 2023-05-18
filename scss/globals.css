@@ -25,14 +25,20 @@
 
 :root {
   --navy-shadow: rgba(2, 12, 27, 0.7);
-  --background-color: #0a192f;
+  --background-color: linear-gradient(
+    35deg,
+    rgba(138, 63, 104, 1) 0%,
+    rgba(45, 105, 131, 1) 34%,
+    rgba(35, 160, 131, 1) 79%,
+    rgba(23, 224, 131, 1) 100%
+  );
   --lightest-navy: #233554;
   --light-navy: #112240;
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #ccd6f6;
-  --lightest-slate: #a8b2d1;
-  --theme-color: #9d00ff;
+  --dark-slate: #282a2e;
+  --slate: #34363c;
+  --light-slate: #4d505d;
+  --lightest-slate: #43454c;
+  --theme-color: #000000;
 }
 
 ::-moz-selection {

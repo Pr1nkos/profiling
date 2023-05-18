@@ -17,7 +17,6 @@ function Contact() {
           hidden: { opacity: 0, y: 0 },
         }}
       >
-        <h2 className='contact-title'>Контакты</h2>
         <h2 className='contact-sub-title'>Свяжитесь с нами</h2>
         <p className='contact-text'>
           Если у вас есть какие-либо вопросы или предложения, не стесняйтесь
