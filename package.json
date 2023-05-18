@@ -23,6 +23,7 @@
     "@prisma/client": "^4.14.0",
     "all": "^0.0.0",
     "bcrypt": "^5.1.0",
+    "flowbite": "^1.6.5",
     "framer-motion": "^10.12.11",
     "next": "latest",
     "next-auth": "^4.22.1",
