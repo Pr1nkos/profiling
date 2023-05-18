@@ -1,12 +1,14 @@
-import Layout from "../components/layout"
-import styles from "../styles/Tests.module.css"
+import NavbarRoute from "../components/Navbar"
+import Contact from "../components/footer"
 
 export default function Home() {
   return (
-    <Layout>
-      <main className={styles.main}>
+    <>
+      <NavbarRoute />
+      <div className='bg-gradient-to-bl from-green-200 to-purple-200'>
         <p id='font-common'>Тесты</p>
-      </main>
-    </Layout>
+      </div>
+      <Contact />
+    </>
   )
 }

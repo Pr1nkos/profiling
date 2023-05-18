@@ -1,17 +1,19 @@
 import Image from "next/image"
 import Layout from "../components/layout"
 import { Inter } from "next/font/google"
+import NavbarRoute from "../components/Navbar"
+import Contact from "../components/footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
-    <Layout>
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-      >
+    <>
+      <NavbarRoute />
+      <div className='bg-gradient-to-bl from-green-200 to-purple-200'>
         <p id='font-common'>Тренажер лжи</p>
-      </main>
-    </Layout>
+      </div>
+      <Contact />
+    </>
   )
 }

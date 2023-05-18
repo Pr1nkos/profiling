@@ -1,6 +1,5 @@
 import { signIn, signOut, useSession } from "next-auth/react"
 import React from "react"
-import styles from "./header.module.css"
 
 export default function Header() {
   const { data: session, status } = useSession()
@@ -10,12 +9,8 @@ export default function Header() {
       <noscript>
         <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
       </noscript>
-      <div className={styles.signedInStatus}>
-        <p
-          className={`nojs-show ${
-            !session && loading ? styles.loading : styles.loaded
-          }`}
-        >
+      <div>
+        <p className={`nojs-show ${!session && loading}`}>
           {!session && (
             <>
               <a
@@ -31,14 +26,13 @@ export default function Header() {
           )}
           {session?.user && (
             <>
-              <span>
+              {/* <span>
                 <br />
                 <strong>{session.user.email ?? session.user.name}</strong>
-                {/* <strong>{session.user.email}</strong>                 */}
-              </span>
+                <strong>{session.user.email}</strong>                
+              </span> */}
               <a
                 href={`/api/auth/signout`}
-                className={styles.button}
                 onClick={(e) => {
                   e.preventDefault()
                   signOut()

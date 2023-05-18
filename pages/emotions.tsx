@@ -1,14 +1,14 @@
-import Layout from "../components/layout"
 import { Inter } from "next/font/google"
+import Contact from "../components/footer"
+import NavbarRoute from "../components/Navbar"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
-    <Layout>
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-      >
+    <>
+      <NavbarRoute />
+      <div className='bg-gradient-to-bl from-green-200 to-purple-200'>
         <p id='font-common'>Изучение эмоций</p>
         <h2 className='x-text-content-text-primary'>Что такое эмоции?</h2>
         <p>
@@ -92,7 +92,8 @@ export default function Home() {
           исследованию эмоций и разработке инструментов, помогающих нам лучше
           понять эмоциональную жизнь себя и других.
         </p>
-      </main>
-    </Layout>
+      </div>
+      <Contact />
+    </>
   )
 }

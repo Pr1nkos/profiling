@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 function Contact() {
   return (
     <motion.div
-      className='contact'
+      className='contact '
       id='contact'
       initial='hidden'
       whileInView='visible'

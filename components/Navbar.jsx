@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import Logo from "../public/imgs/logo.png"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
@@ -10,18 +10,20 @@ const NavbarRoute = () => {
   const handleNav = () => {
     setMenuOpen(!menuOpen)
   }
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
 
   return (
     <>
-      <nav className='z-50 fixed w-full h-24 shadow-xl bg-purple-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100'>
+      <nav className='z-50 fixed w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
           <Link href='/'>
             <Image
               src={Logo}
               alt='Logo'
-              width='60'
-              height='60'
-              className='cursor-pointer'
+              width='55'
+              height='55'
+              className='cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-blue-800  hover:ease-in-out duration-500'
               priority
             />
           </Link>
@@ -31,8 +33,8 @@ const NavbarRoute = () => {
                 <li className=''>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300'></span>
-                    <span className='relative text-black group-hover:text-white font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300 '></span>
+                    <span className='relative text-black group-hover:text-white  font-bold'>
                       Курс по профайлингу
                     </span>
                   </button>
@@ -84,6 +86,7 @@ const NavbarRoute = () => {
               </Link>
               <div className='ml-10 uppercase text-xl'>
                 <button className='flex text-gray-100 justify-center transition duration-200 ease-in-out transform px-4 py-1  w-24 border-b-4 border-gray-500 hover:border-b-2 bg-gradient-to-t from-gray-400  via-gray-600 to-gray-200 rounded-2xl hover:translate-y-px'>
+                  {/* ВОЙТИ! */}
                   <Header />
                 </button>
               </div>
@@ -93,6 +96,7 @@ const NavbarRoute = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
+
         <div
           className={
             menuOpen
