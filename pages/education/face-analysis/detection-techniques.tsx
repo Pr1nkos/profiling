@@ -5,6 +5,7 @@ import NavbarRoute from "../../../components/Navbar"
 import NavbarBottom from "../../../components/NavbarBottom"
 import Contact from "../../../components/footer"
 import Image from "next/image"
+import Head from "next/head"
 
 export default function Home() {
   const { data: session } = useSession()
@@ -20,6 +21,10 @@ export default function Home() {
   // If session exists, display content
   return (
     <>
+      <Head>
+        <title id="title">Методики</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <NavbarRoute />
       <NavbarBottom />
 
