@@ -10,7 +10,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "ESnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,7 +18,7 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "ESnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Navbar.jsx",
-    "@prisma/client",
+    "@Prisma/client",
     "pages/api/auth/[...nextauth].ts",
     "pages/auth/signin.tsx"
   ],

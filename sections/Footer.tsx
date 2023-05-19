@@ -24,7 +24,7 @@ function Footer() {
     <footer>
       <Link href='https://github.com/' target='_blank' className='footer-link'>
         <span className='footer-info'>
-          Сделано командой разработчкиов POLL-I.
+          Сделано командой разработчиков POLL-I.
         </span>
         <span className='footer-info'>
           © 2023 Платформа обучения профайлингу и симуляции эмоций.
