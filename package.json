@@ -12,37 +12,51 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:css": "postcss styles/globals.css",
+    "build:watch": "postcss styles/globals.css --watch"
   },
-  "author": "Iain Collins <me@iaincollins.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Nico Domino <yo@ndo.dev>",
-    "Lluis Agusti <hi@llu.lu>"
-  ],
+  "author": "Prinkos & SpacyLion",
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
     "@next-auth/prisma-adapter": "^1.0.6",
     "@prisma/client": "^4.14.0",
+    "all": "^0.0.0",
     "bcrypt": "^5.1.0",
+    "flowbite": "^1.6.5",
+    "framer-motion": "^10.12.11",
     "next": "latest",
     "next-auth": "^4.22.1",
+    "next-themes": "^0.2.1",
     "nodemailer": "^6.9.1",
+    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "tailwindcss": "^3.3.2"
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/node": "^17.0.45",
-    "@types/react": "^18.0.37",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.14",
     "prisma": "^4.14.0",
+    "tailwindcss": "^3.3.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "name": "profiling",
   "version": "1.0.0",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "profiling",
+    "POLL-I",
+    "Education",
+    "FullStack",
+    "NextJS",
+    "PostGreSQL"
+  ],
   "license": "ISC"
 }

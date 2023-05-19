@@ -7,14 +7,18 @@
   },
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ESnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "ESnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -27,9 +31,12 @@
     "next-auth.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/Navbar.tsx",
-    "@prisma/client",
-    "pages/api/auth/[...nextauth].ts"
-, "pages/auth/signin.tsx"  ],
-  "exclude": ["node_modules"]
+    "components/Navbar.jsx",
+    "@Prisma/client",
+    "pages/api/auth/[...nextauth].ts",
+    "pages/auth/signin.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

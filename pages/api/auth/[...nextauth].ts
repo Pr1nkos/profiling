@@ -1,18 +1,16 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
+import NextAuth, { NextAuthOptions } from "next-auth"
+import CredentialsProvider from "next-auth/providers/credentials"
 // import GoogleProvider from "next-auth/providers/google"
-// import FacebookProvider from "next-auth/providers/facebook"
 // import GithubProvider from "next-auth/providers/github"
 // import TwitterProvider from "next-auth/providers/twitter"
 // import Auth0Provider from "next-auth/providers/auth0"
-// import AppleProvider from "next-auth/providers/apple"
 // import EmailProvider from "next-auth/providers/email";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import { PrismaClient } from "@prisma/client";
+import { PrismaAdapter } from "@next-auth/prisma-adapter"
+import { PrismaClient } from "@prisma/client"
 
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
-const prisma = new PrismaClient();
+const prisma = new PrismaClient()
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   // https://next-auth.js.org/configuration/providers/oauth
@@ -38,18 +36,18 @@ export const authOptions: NextAuthOptions = {
           where: {
             email: credentials.username,
           },
-        });
+        })
         // Add logic here to look up the user from the credentials supplied
 
         if (dbUser) {
-          console.log(dbUser); //DEBUG
+          console.log(dbUser) //DEBUG
           if (dbUser?.password == credentials.password) {
-            return dbUser;
+            return dbUser
           }
           // Any object returned will be saved in `user` property of the JWT
         }
         // If you return null then an error will be displayed advising the user to check their details.
-        return null;
+        return null
 
         // You can also Reject this callback with an Error thus the user will be sent to the error page with the error message as a query parameter
       },
@@ -106,24 +104,23 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     session: async ({ session, token }) => {
       if (session?.user && token) {
-        session.user.role = token.role;
+        session.user.role = token.role
       }
-      return session;
+      return session
     },
     jwt: async ({ user, token }) => {
       if (user) {
-        token.role = user.role;
+        token.role = user.role
       }
-      return token;
+      return token
     },
-    
   },
   session: {
     strategy: "jwt",
   },
   pages: {
-    signIn:"/auth/signin"
-  }
-};
+    signIn: "/auth/signin",
+  },
+}
 
-export default NextAuth(authOptions);
+export default NextAuth(authOptions)

@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./components/";
+@import "./sections/";
+
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/Bender.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
