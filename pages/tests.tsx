@@ -1,30 +1,11 @@
 import NavbarRoute from "../components/Navbar";
 import Contact from "../components/footer";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { FaArrowLeft } from "react-icons/fa";
-import Question from "../components/Tests/Question";
-import ExerciseList from "../components/Tests/ExerciseList";
+import Question from "../components/Question";
+import ExerciseList from "../components/ExerciseList";
 import { useState } from "react";
-import { RadioGroup } from "@headlessui/react";
-
-const test = [
-  {
-    name: "Ответ 1",
-    desc: "Злость",
-  },
-  {
-    name: "Ответ 2",
-    desc: "Отчаяние",
-  },
-  {
-    name: "Ответ 3",
-    desc: "Грусть",
-  },
-  {
-    name: "Ответ 4",
-    desc: "Изумление",
-  },
-];
 
 export function getServerSideProps() {
   const exercises = [
@@ -39,83 +20,74 @@ export function getServerSideProps() {
   };
 }
 
+// export function ChangeImage(){
+//   document.getElementById('image').src="anger.jpg"
+// }
 export function getQuestions(exerciseId) {
   const questions = [
     {
       id: 0,
       exerciseId: 0,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
       correctAnswer: "a",
     },
     {
       id: 2,
       exerciseId: 0,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
-      correctAnswer: "d",
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
+      correctAnswer: "a",
     },
     {
       id: 3,
       exerciseId: 0,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
-      correctAnswer: "e",
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
+      correctAnswer: "a",
     },
     {
       id: 4,
       exerciseId: 1,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
-      correctAnswer: "b",
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
+      correctAnswer: "a",
     },
     {
       id: 5,
       exerciseId: 0,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
-      correctAnswer: "d",
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
+      correctAnswer: "a",
     },
     {
       id: 6,
       exerciseId: 1,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
-      correctAnswer: "c",
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
+      correctAnswer: "a",
     },
     {
       id: 7,
       exerciseId: 0,
-      question: "Какая эмоция изображена на картинке?",
-      answers: ["Счастье", "Грусть", "Удивление", "1Изумление00", "Печаль"],
-      correctAnswer: "b",
+      question: "Какая эмоция изображена на экране?",
+      answers: ["Гнев", "Радость", "Грусть", "Изумление", "Страх"],
+      correctAnswer: "a",
     },
   ];
 
   return questions.filter((items) => items.exerciseId === exerciseId);
 }
-function CheckIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" {...props}>
-      <circle cx={12} cy={12} r={12} fill="#ff1" opacity="0.5" />
-      <path
-        d="M7 13l3 3 7-7"
-        stroke="#fff"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 export default function Home({ exercises }) {
-  const [selected, setSelected] = useState(test[0]);
+  const router = useRouter();
+  const handleButtonClick = () => router.push("/tests/test");
   const initialState = {
     isExerciseShown: false,
     exerciseId: null,
     questions: [],
     isExerciseDone: false,
     score: 0,
+    img:null,
   };
 
   const [state, setState] = useState(initialState);
@@ -143,7 +115,7 @@ export default function Home({ exercises }) {
     <>
       <NavbarRoute />
       <div className="bg-gradient-to-bl from-green-200 to-purple-200">
-        <div className="bg-red-900 rounded-full min-h-screen justify-center p-8 flex flex-col items-center animate-loop">
+        <div className="bg-red-900 rounded-full  justify-center p-8 flex flex-col items-center animate-loop">
           <h1 className="text-white text-4xl font-bold mb-4">ЗАДАНИЯ</h1>
           <Image
             src="/imgs/anger.jpg"
@@ -154,14 +126,18 @@ export default function Home({ exercises }) {
           />
         </div>
       </div>
-      <div className="w-1/2 m-auto mt-[120px] bg-gray-200 p-6 rounded-md shadow-2xl">
+      <div className="text-center">
+      {/* <button type="button" onClick={ChangeImage()}>
+        Show Image
+    </button> */}
+        <img id="image"></img>
         <main className="">
           {!isExerciseShown ? (
             <ExerciseList exercises={exercises} func={showExercise} />
           ) : isExerciseDone ? (
             <div>
               <p className="my-4">
-                Вы ответили верно на {score}/{questions.length} вопросов!{" "}
+                Вы правильно ответили на {score} из {questions.length} вопросов!{" "}
               </p>
 
               <button
@@ -171,7 +147,7 @@ export default function Home({ exercises }) {
                 <span>
                   <FaArrowLeft />
                 </span>
-                <span>Назад</span>
+                <span>Вернуться</span>
               </button>
             </div>
           ) : (
@@ -183,68 +159,9 @@ export default function Home({ exercises }) {
           )}
         </main>
       </div>
-      <div className="w-full px-4 py-16">
-        <div className="mx-auto w-full max-w-md ">
-          <h1>Тест 1</h1>
-          <RadioGroup value={selected} onChange={setSelected}>
-            <RadioGroup.Label className="sr-only text-white">
-              Тест1
-            </RadioGroup.Label>
-            <div className="space-y-2">
-              {test.map((test) => (
-                <RadioGroup.Option
-                  key={test.name}
-                  value={test}
-                  className={({ active, checked }) =>
-                    `${
-                      active
-                        ? "ring-2 ring-white ring-opacity-60 ring-offset-2 ring-green"
-                        : ""
-                    }
-                  ${
-                    checked ? "bg-sky-900 bg-opacity-75 text-white" : "bg-white"
-                  }
-                    relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none`
-                  }
-                >
-                  {({ active, checked }) => (
-                    <>
-                      <div className="flex w-full items-center justify-between">
-                        <div className="flex items-center">
-                          <div className="text-sm">
-                            <RadioGroup.Description
-                              as="span"
-                              className={`inline ${
-                                checked ? "text-sky-100" : "text-gray-500"
-                              }`}
-                            >
-                              <span>{test.desc}</span>{" "}
-                            </RadioGroup.Description>
-                          </div>
-                        </div>
-                        {checked && (
-                          <div className="shrink-0 text-white">
-                            <CheckIcon className="h-6 w-6" />
-                          </div>
-                        )}
-                      </div>
-                    </>
-                  )}
-                </RadioGroup.Option>
-              ))}
-            </div>
-          </RadioGroup>
-        </div>
-      </div>
       <Contact />
     </>
   );
 }
+
 // export default function Home({ exercises }) {
-const initialState = {
-  isExerciseShown: false,
-  exerciseId: null,
-  questions: [],
-  isExerciseDone: false,
-  score: 0,
-};

@@ -58,7 +58,7 @@ export default function Question({ questions, hideExercise, finishTest }) {
                 <span>
                     <FaArrowLeft />
                 </span>
-                <span>Назад</span>
+                <span>Вернуться</span>
             </button>
             <h1 className="text-2xl mt-2 capitalize">{`${
                 state.currentQuestion + 1

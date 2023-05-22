@@ -13,7 +13,6 @@ export default function Answers({ answers, state, answerQuestion }) {
     };
     return (
         <ul>
-
             {answers.map((answer, i) => (
                 <Answer
                     key={i}
