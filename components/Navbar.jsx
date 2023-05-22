@@ -75,10 +75,16 @@ const NavbarRoute = () => {
                 </li>
               </Link>
               <div className='ml-10 uppercase text-xl'>
-                <button className='flex text-gray-100 justify-center transition duration-200 ease-in-out transform px-4 py-1  w-24 border-b-4 border-gray-500 hover:border-b-2 bg-gradient-to-t from-gray-400  via-gray-600 to-gray-200 rounded-2xl hover:translate-y-px'>
-                  {/* ВОЙТИ! */}
-                  <Header />
-                </button>
+                <li className='ml-10 '>
+                  <button className='btn relative inline-block font-medium group'>
+                    <button className='flex  justify-center border-2 border-green-600 rounded-lg px-3 py-1 text-green-400 cursor-pointer hover:bg-green-600 hover:text-green-200 '></button>
+                    <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
+                    <span className='absolute inset-0 w-full h-full bg-green-300 border-2 border-black group-hover:bg-green-300'>
+                      <Header />
+                    </span>
+                    <span className='relative text-black group-hover:text-white font-bold'></span>
+                  </button>
+                </li>
               </div>
             </ul>
           </div>

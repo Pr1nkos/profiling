@@ -67,7 +67,10 @@ function Hero() {
           delay: 1.65,
         }}
       >
-        <Button text='ПРИЛОЖЕНИЕ СИМУЛЯЦИИ ЭМОЦИЙ' link='https://' />
+        <Button
+          text='ПРИЛОЖЕНИЕ СИМУЛЯЦИИ ЭМОЦИЙ'
+          link='https://drive.google.com/file/d/1mKx7wK3hd-1Rs7xLzW0D9laz34Yn5x0d/view?usp=share_link'
+        />
       </motion.div>
     </div>
   )
