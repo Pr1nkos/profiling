@@ -28,9 +28,7 @@ const NavbarButtons = () => {
               </span>
             </button>
           </Link>
-          <div>
-            <p className='uppercase'>{document.title}</p>
-          </div>
+
           <div className='hidden sm:flex'>
             <ul className='hidden sm:flex '>
               <li className='ml-10 '>
