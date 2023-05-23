@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/Bender.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bender";
+  src: url("../public/fonts/Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+:root {
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --background-color: linear-gradient(
+    35deg,
+    rgba(138, 63, 104, 1) 0%,
+    rgba(45, 105, 131, 1) 34%,
+    rgba(35, 160, 131, 1) 79%,
+    rgba(23, 224, 131, 1) 100%
+  );
+  --lightest-navy: #233554;
+  --light-navy: #112240;
+  --dark-slate: #282a2e;
+  --slate: #34363c;
+  --light-slate: #4d505d;
+  --lightest-slate: #43454c;
+  --theme-color: #000000;
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--background-color);
+  counter-reset: title;
+}
+
+main {
+  transition: 0.3s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+}

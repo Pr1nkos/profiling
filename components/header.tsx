@@ -1,33 +1,23 @@
-import { signIn, signOut, useSession } from "next-auth/react";
-import React from "react";
-import styles from "./header.module.css";
+import { signIn, signOut, useSession } from "next-auth/react"
+import React from "react"
 
-// The approach used in this component shows how to build a sign in and sign out
-// component that works on pages which support both client and server side
-// rendering, and avoids any flash incorrect content on initial page load.
 export default function Header() {
-  const { data: session, status } = useSession();
-  const loading = status === "loading";
+  const { data: session, status } = useSession()
+  const loading = status === "loading"
   return (
-    <header id="headers">
+    <header id='headers'>
       <noscript>
         <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
       </noscript>
-      <div className={styles.signedInStatus}>
-        <p
-          className={`nojs-show ${
-            !session && loading ? styles.loading : styles.loaded
-          }`}
-        >
+      <div>
+        <p className={`nojs-show ${!session && loading}`}>
           {!session && (
             <>
-              <span className={styles.notSignedInText}>Вы не вошли</span>
               <a
                 href={`/api/auth/signin`}
-                className={styles.buttonPrimary}
                 onClick={(e) => {
-                  e.preventDefault();
-                  signIn();
+                  e.preventDefault()
+                  signIn()
                 }}
               >
                 Войти
@@ -36,18 +26,16 @@ export default function Header() {
           )}
           {session?.user && (
             <>
-              <span className={styles.signedInText}>
-                <small>Здравствуйте, </small>
+              {/* <span>
                 <br />
                 <strong>{session.user.email ?? session.user.name}</strong>
-                {/* <strong>{session.user.email}</strong>                 */}
-              </span>
+                <strong>{session.user.email}</strong>                
+              </span> */}
               <a
                 href={`/api/auth/signout`}
-                className={styles.button}
                 onClick={(e) => {
-                  e.preventDefault();
-                  signOut();
+                  e.preventDefault()
+                  signOut()
                 }}
               >
                 Выйти
@@ -57,5 +45,5 @@ export default function Header() {
         </p>
       </div>
     </header>
-  );
+  )
 }
