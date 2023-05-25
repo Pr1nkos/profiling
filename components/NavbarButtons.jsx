@@ -17,7 +17,7 @@ const NavbarButtons = () => {
 
   return (
     <>
-      {/* <nav className='z-50 fixed bottom-0 w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
+      <nav className='z-50 fixed bottom-0 w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
           <Link href='/'>
             <button className='btn relative inline-block font-medium group'>
@@ -140,7 +140,7 @@ const NavbarButtons = () => {
             </ul>
           </div>
         </div>
-      </nav> */}
+      </nav>
     </>
   )
 }

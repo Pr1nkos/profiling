@@ -15,7 +15,7 @@ const NavbarRoute = () => {
 
   return (
     <>
-      {/* <nav className='z-50 fixed w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
+      <nav className='z-50 fixed w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
           <Link href='/'>
             <Image
@@ -76,14 +76,14 @@ const NavbarRoute = () => {
               </Link>
               <div className='ml-10 uppercase text-xl'>
                 <li className='ml-10 '>
-                  <button className='btn relative inline-block font-medium group'>
-                    <button className='flex  justify-center border-2 border-green-600 rounded-lg px-3 py-1 text-green-400 cursor-pointer hover:bg-green-600 hover:text-green-200 '></button>
+                  <div className='btn relative inline-block font-medium group'>
+                    <button className='flex  justify-center border-2 border-green-600 rounded-lg px-2 py-1 text-green-400 cursor-pointer hover:bg-green-600 hover:text-green-200 '></button>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
                     <span className='absolute inset-0 w-full h-full bg-green-300 border-2 border-black group-hover:bg-green-300'>
                       <Header />
                     </span>
                     <span className='relative text-black group-hover:text-white font-bold'></span>
-                  </button>
+                  </div>
                 </li>
               </div>
             </ul>
@@ -130,7 +130,7 @@ const NavbarRoute = () => {
             </ul>
           </div>
         </div>
-      </nav> */}
+      </nav>
     </>
   )
 }

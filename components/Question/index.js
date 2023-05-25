@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { FaArrowLeft } from "react-icons/fa";
-import Answers from "./Answers";
-import NavigationButton from "./NavigationButton";
-import React from "react";
+import { useState } from "react"
+import { FaArrowLeft } from "react-icons/fa"
+import Answers from "./Answers"
+import NavigationButton from "./NavigationButton"
+import React from "react"
 
 export default function Question({ questions, hideExercise, finishTest }) {
   const initialState = {
@@ -10,69 +10,72 @@ export default function Question({ questions, hideExercise, finishTest }) {
     answers: [],
     numberOfQuestions: questions.length,
     correctAnswers: [],
-  };
-  const [state, setState] = useState(initialState);
-  const { currentQuestion, answers, numberOfQuestions } = state;
-  const question = questions[currentQuestion];
+  }
+  const [state, setState] = useState(initialState)
+  const { currentQuestion, answers, numberOfQuestions } = state
+  const question = questions[currentQuestion]
 
   const submitAnswer = () => {
-    let totalScore = 0;
+    let totalScore = 0
     for (let i = 0; i < questions.length; i++) {
-      if (answers[i] === questions[i].correctAnswer) totalScore++;
+      if (answers[i] === questions[i].correctAnswer) totalScore++
     }
-    finishTest(totalScore);
-  };
+    finishTest(totalScore)
+  }
   const answerQuestion = (answer) => {
-    answers[currentQuestion] = answer;
+    answers[currentQuestion] = answer
     setState({
       ...state,
       answers,
-    });
-  };
+    })
+  }
 
   const moveQuestion = (direction) => {
     switch (direction) {
       case "next": {
         if (currentQuestion === numberOfQuestions - 1) {
-          submitAnswer();
-          return;
+          submitAnswer()
+          return
         }
         setState({
           ...state,
           currentQuestion: currentQuestion + 1,
-        });
-        break;
+        })
+        break
       }
       case "prev": {
         setState({
           ...state,
           currentQuestion: currentQuestion - 1,
-        });
+        })
       }
     }
-  };
+  }
 
   const imgsrc = [
     {
-      img: "imgs/anger.jpg",
+      img: "imgs/angryf.gif",
     },
     {
-      img: "imgs/contempt.jpg",
+      img: "imgs/prezrenie.gif",
     },
     {
-      img: "imgs/disgust.jpg",
+      img: "imgs/disg2.gif",
     },
     {
-      img: "imgs/enjoyment.jpg",
+      img: "imgs/happy.gif",
     },
     {
-      img: "imgs/fear.jpg",
+      img: "imgs/fear.gif",
     },
-  ];
+    {
+      img: "imgs/sad.gif",
+    },
+  ]
   return (
     <div>
       <button
-        className="flex items-center gap-1 bg-gray-400 p-2 rounded-sm shadow-md text-white"
+        className='flex items-center gap-1 bg-gray-400 p-2 rounded-sm shadow-md text-white'
         onClick={hideExercise}
       >
         <span>
@@ -81,7 +84,7 @@ export default function Question({ questions, hideExercise, finishTest }) {
         <span>Вернуться</span>
       </button>
 
-      <h1 className="text-2xl mt-2 capitalize">{`${
+      <h1 className='text-2xl mt-2 capitalize'>{`${
         state.currentQuestion + 1
       }. ${question.question}`}</h1>
       <img src={imgsrc[currentQuestion].img}></img>
@@ -93,5 +96,5 @@ export default function Question({ questions, hideExercise, finishTest }) {
 
       <NavigationButton state={state} moveQuestion={moveQuestion} />
     </div>
-  );
+  )
 }
