@@ -2,7 +2,7 @@ import { getToken } from "next-auth/jwt";
 import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
 export async function middleware(request: NextRequest, _next: NextFetchEvent) {
   const { pathname } = request.nextUrl;
-  const protectedPaths = ["/education"];
+  const protectedPaths = ["/education/", "/education"];
   const matchesProtectedPath = protectedPaths.some((path) =>
     pathname.startsWith(path)
   );

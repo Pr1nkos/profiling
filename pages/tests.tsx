@@ -131,7 +131,7 @@ export default function Home({ exercises }) {
         Show Image
     </button> */}
             <img id='image'></img>
-            <main className=' h-screen grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center'>
+            <main className='grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center'>
               {!isExerciseShown ? (
                 <ExerciseList exercises={exercises} func={showExercise} />
               ) : isExerciseDone ? (

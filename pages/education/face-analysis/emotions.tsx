@@ -4,10 +4,24 @@ import NavbarRoute from "../../../components/Navbar";
 import NavbarBottom from "../../../components/NavbarBottom";
 import Image from "next/image";
 import Head from "next/head";
+import { useEffect } from "react";
+import AccessDenied from "../../../components/layout-denied";
+import { useSession } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { data: session } = useSession()
+
+  // Fetch content from protected route
+  useEffect(() => {}, [session])
+
+  // If no session exists, display access denied message
+  if (!session) {
+    return <AccessDenied />
+  }
+
+  // If session exists, display content
   return (
     <>
       <Head>

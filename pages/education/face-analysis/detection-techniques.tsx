@@ -1,21 +1,21 @@
-import { useState, useEffect } from "react"
-import { useSession } from "next-auth/react"
-import AccessDenied from "../../../components/layout-denied"
-import NavbarRoute from "../../../components/Navbar"
-import NavbarBottom from "../../../components/NavbarBottom"
-import Contact from "../../../components/footer"
-import Image from "next/image"
-import Head from "next/head"
+import { useEffect } from "react";
+import { useSession } from "next-auth/react";
+import AccessDenied from "../../../components/layout-denied";
+import NavbarRoute from "../../../components/Navbar";
+import NavbarBottom from "../../../components/NavbarBottom";
+import Contact from "../../../components/footer";
+import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
 
   // Fetch content from protected route
-  useEffect(() => {}, [session])
+  useEffect(() => {}, [session]);
 
   // If no session exists, display access denied message
   if (!session) {
-    return <AccessDenied />
+    return <AccessDenied />;
   }
 
   // If session exists, display content
@@ -28,17 +28,17 @@ export default function Home() {
       <NavbarRoute />
       <NavbarBottom />
 
-      <section className='bg-gradient-to-bl from-green-200 to-purple-200 border-b py-8'>
-        <div className='container max-w-5xl mx-auto m-8'>
-          <h2 className='w-full mt-36 my-2 text-5xl font-bold leading-tight text-center text-gray-800'>
+      <section className="bg-gradient-to-bl from-green-200 to-purple-200 border-b py-8">
+        <div className="container max-w-5xl mx-auto m-8">
+          <h2 className="w-full mt-36 my-2 text-5xl font-bold leading-tight text-center text-gray-800">
             Современное представление о методиках анализа лица
           </h2>
-          <div className='w-full mb-4'>
-            <div className='h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t'></div>
+          <div className="w-full mb-4">
+            <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
-          <div className='flex flex-wrap'>
-            <div className='w-5/6 sm:w-1/2 p-6'>
-              <p className='text-gray-600 mb-8'>
+          <div className="flex flex-wrap">
+            <div className="w-5/6 sm:w-1/2 p-6">
+              <p className="text-gray-600 mb-8">
                 Добро пожаловать на страницу «Методы обнаружения» в нашем
                 разделе «Анализ лиц». Здесь мы исследуем различные методы и
                 методологии, используемые экспертами по профилированию для
@@ -51,32 +51,32 @@ export default function Home() {
                 ваши знания в области профилирования и раскрыть скрытые истины.
               </p>
             </div>
-            <div className='w-full sm:w-1/2 p-6'>
+            <div className="w-full sm:w-1/2 p-6">
               <Image
-                className='h-40 rounded w-full object-cover object-center mb-6'
-                src='/imgs/anger.jpg'
+                className="h-40 rounded w-full object-cover object-center mb-6"
+                src="/imgs/anger.jpg"
                 width={200}
                 height={300}
-                alt='content'
+                alt="content"
               />
             </div>
           </div>
-          <div className='flex flex-wrap flex-col-reverse sm:flex-row'>
-            <div className='w-full sm:w-1/2 p-6 mt-6'>
+          <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+            <div className="w-full sm:w-1/2 p-6 mt-6">
               <Image
-                className='h-40 rounded w-full object-cover object-center mb-6'
-                src='/imgs/anger.jpg'
+                className="h-40 rounded w-full object-cover object-center mb-6"
+                src="/imgs/anger.jpg"
                 width={200}
                 height={300}
-                alt='content'
+                alt="content"
               />
             </div>
-            <div className='w-full sm:w-1/2 p-6 mt-6'>
-              <div className='align-middle'>
-                <h3 className='text-3xl text-gray-800 font-bold leading-none mb-3'>
+            <div className="w-full sm:w-1/2 p-6 mt-6">
+              <div className="align-middle">
+                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                   Анализ микровыражения: выявление скрытых эмоций
                 </h3>
-                <p className='text-gray-600 mb-8'>
+                <p className="text-gray-600 mb-8">
                   Микровыражения — это мимолетные выражения лица, которые длятся
                   доли секунды и часто указывают на скрытые эмоции. Эксперты по
                   профилированию, обученные анализу микровыражений, могут
@@ -93,12 +93,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='container mx-auto flex flex-wrap pt-4 pb-12'>
-          <h2 className='w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800'>
+        <div className="container mx-auto flex flex-wrap pt-4 pb-12">
+          <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
             Система кодирования лицевых движений (FACS): расшифровка выражений
             лица
           </h2>
-          <p className='w-full my-2 text-xl font-bold leading-tight text-center text-gray-600'>
+          <p className="w-full my-2 text-xl font-bold leading-tight text-center text-gray-600">
             Система кодирования лицевых движений (FACS) — это комплексная
             система, разработанная Полом Экманом и Уоллесом Фризеном для
             систематического кодирования и анализа выражений лица. FACS
@@ -110,15 +110,15 @@ export default function Home() {
             выражения от сфабрикованных. Погрузитесь в мир FACS и используйте
             его возможности для анализа лица.
           </p>
-          <div className='w-full mb-4'>
-            <div className='h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t'></div>
+          <div className="w-full mb-4">
+            <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
-          <div className='w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink'>
-            <div className='flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow'>
-              <div className='w-full font-bold text-xl text-gray-800 px-6'>
+          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div className="w-full font-bold text-xl text-gray-800 px-6">
                 Контекстный анализ
               </div>
-              <p className='text-gray-800 text-base px-6 mb-5'>
+              <p className="text-gray-800 text-base px-6 mb-5">
                 В то время как выражение лица дает ценную информацию,
                 контекстуальный анализ расширяет возможности понимания в анализе
                 лица. Эксперты по профилированию учитывают различные
@@ -133,13 +133,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className='w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink'>
-            <div className='flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow'>
-              <div className='w-full font-bold text-xl text-gray-800 px-6'>
+          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div className="w-full font-bold text-xl text-gray-800 px-6">
                 Достижения в области технологий: искусственный интеллект и
                 машинное обучение
               </div>
-              <p className='text-gray-800 text-base px-6 mb-5'>
+              <p className="text-gray-800 text-base px-6 mb-5">
                 Достижения в области технологий произвели революцию в анализе
                 лиц, проложив путь к новым методам обнаружения. Алгоритмы
                 искусственного интеллекта (ИИ) и машинного обучения теперь могут
@@ -159,5 +159,5 @@ export default function Home() {
 
       <Contact />
     </>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useSession } from "next-auth/react";
 import AccessDenied from "../../../components/layout-denied";
 import NavbarRoute from "../../../components/Navbar";

@@ -99,7 +99,7 @@ export const authOptions: NextAuthOptions = {
     // }),
   ],
   theme: {
-    colorScheme: "dark",
+    colorScheme: "light",
   },
   callbacks: {
     session: async ({ session, token }) => {

@@ -1,3 +1,7 @@
+27.05.2023
+1. Защита не только /education, но и /education/**
+2. Исправлен стиль тестов (tests)
+3. 
 19.05.2023
 1. Перевел все файлы на typescript
 2. На Nodejs не был установлен autoprefixer - fixed
