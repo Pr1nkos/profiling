@@ -17,13 +17,13 @@ const NavbarBottom = () => {
 
   return (
     <>
-      <nav className='z-50 fixed bottom-0 w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
+      <nav className='z-50 fixed bottom-0 w-full h-24 shadow-sm bg-gray-50 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
           <Link href='/'>
             <button className='btn relative inline-block font-medium group'>
               <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-              <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300 '></span>
-              <span className='relative text-black group-hover:text-white  font-bold'>
+              <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white'></span>
+              <span className='relative text-white group-hover:text-black  font-bold'>
                 Обратно в меню
               </span>
             </button>
@@ -36,8 +36,8 @@ const NavbarBottom = () => {
               <li className='ml-10 '>
                 <button className='btn relative inline-block font-medium group'>
                   <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                  <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300'></span>
-                  <span className='relative text-black group-hover:text-white font-bold'>
+                  <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black '></span>
+                  <span className='relative text-white font-bold'>
                     <DropdownFace />
                   </span>
                 </button>
@@ -46,8 +46,8 @@ const NavbarBottom = () => {
               <li className='ml-10 '>
                 <button className='btn relative inline-block font-medium group'>
                   <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                  <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300'></span>
-                  <span className='relative text-black group-hover:text-white font-bold'>
+                  <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black '></span>
+                  <span className='relative text-white  font-bold'>
                     <DropdownPsy />
                   </span>
                 </button>
@@ -63,7 +63,7 @@ const NavbarBottom = () => {
         <div
           className={
             menuOpen
-              ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen p-10 ease-in duration-500 shadow-xl bg-amber-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md  border border-gray-100"
+              ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen p-10 ease-in duration-500 shadow-xl bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md  border border-gray-100"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >

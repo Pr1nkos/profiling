@@ -15,6 +15,7 @@ export default function Header() {
             <>
               <a
                 href={`/api/auth/signin`}
+                className='font-bold'
                 onClick={(e) => {
                   e.preventDefault()
                   signIn()
@@ -33,6 +34,7 @@ export default function Header() {
               </span> */}
               <a
                 href={`/api/auth/signout`}
+                className='font-bold'
                 onClick={(e) => {
                   e.preventDefault()
                   signOut()

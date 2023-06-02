@@ -23,12 +23,11 @@ function Footer() {
   return (
     <footer>
       <Link href='https://github.com/' target='_blank' className='footer-link'>
-        <span className='footer-info'>
-          Сделано командой разработчиков POLL-I.
-        </span>
-        <span className='footer-info'>
+        <span className='footer-info '>
           © 2023 Платформа обучения профайлингу и симуляции эмоций.
-          г.Санкт-Петербург. Все права защищены.
+          г.Санкт-Петербург. Санкт-Петербургский государственный
+          электротехнический университет «ЛЭТИ» им. В.И.Ульянова (Ленина)
+          СПбГЭТУ «ЛЭТИ». Все права защищены.
         </span>
       </Link>
     </footer>

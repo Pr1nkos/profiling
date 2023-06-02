@@ -1,35 +1,34 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
+
 .contact {
   max-width: 700px;
-  margin: 15rem auto;
+  margin: 2rem auto;
   display: flex;
+  color: black;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   .contact-title {
-    color: var(--theme-color);
     font-size: var(--tbase);
-    font-family: var(--fira-code);
     font-weight: 300;
     &::before {
       counter-increment: title;
       content: "0" counter(title) ".";
       margin-right: 0.5rem;
-      color: var(--theme-color);
     }
   }
   .contact-sub-title {
-    font-size: var(--tgiant);
-    font-family: "Bender";
-    color: var(--light-slate);
+    font-size: 30px;
   }
   .contact-text {
-    color: var(--light-text);
     font-size: var(--tlarge);
     letter-spacing: 0.07rem;
     line-height: 1.6rem;
     font-weight: 500;
-    font-family: "Bender";
+
     text-align: center;
   }
   .contact-cta {

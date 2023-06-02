@@ -1,8 +1,7 @@
 .about {
   margin: 15rem 0;
   .title {
-    font-family: "Bender";
-    color: var(--lightest-slate);
+    color: black;
     position: relative;
     h2 {
       margin-bottom: 2rem;
@@ -18,11 +17,6 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
-        width: 300px;
-        height: 2px;
-        margin-left: 220px;
-        background-color: var(--lightest-navy);
       }
     }
   }
@@ -41,29 +35,6 @@
         letter-spacing: 0.07rem;
         line-height: 1.6rem;
         font-weight: 500;
-        font-family: "Bender";
-      }
-      &-list {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        list-style-type: none;
-        padding: 0 3rem;
-        &-item {
-          font-family: "Bender";
-          line-height: 1.6rem;
-          font-weight: 500;
-          font-size: var(--tbase);
-          color: var(--slate);
-          position: relative;
-          &::before {
-            content: "▹";
-            position: absolute;
-            left: -20px;
-            top: 6px;
-            color: var(--theme-color);
-            line-height: 12px;
-          }
-        }
       }
     }
     &-photo {
@@ -88,7 +59,7 @@
         position: absolute;
         height: 350px;
         width: 350px;
-        background-color: #9d00ff4d;
+        background-color: #0000004d;
         border-radius: 0.2rem;
       }
       .overlay-border {

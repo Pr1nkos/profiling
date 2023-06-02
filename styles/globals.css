@@ -2,48 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* h1 {
-  font-family: "Bender";
-  font-weight: normal;
-  font-style: normal;
-}
-* h2 {
-  font-family: "Bender";
-  font-weight: bold;
-  font-style: italic;
-}
-* h3 {
-  font-family: "Bender";
-  font-weight: normal;
-  font-style: normal;
-}
-* p {
-  font-family: "Bender";
-  font-weight: bold;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Monomaniac+One&display=swap");
 
-@font-face {
-  font-family: "Bender";
-  src: url("../public/fonts/Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Bender";
-  src: url("../public/fonts/BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Bender";
-  src: url("../public/fonts/Bender.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Bender";
-  src: url("../public/fonts/Light.ttf") format("truetype");
-  font-weight: lighter;
-  font-style: normal;
+* {
+  font-family: "Comic Neue", cursive;
+  font-family: "Monomaniac One", sans-serif;
 }

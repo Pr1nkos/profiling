@@ -23,7 +23,7 @@ export function getServerSideProps() {
 // export function ChangeImage(){
 //   document.getElementById('image').src="anger.jpg"
 // }
-export function getQuestions(exerciseId) {
+export function getQuestions(exerciseId: number) {
   const questions = [
     {
       id: 0,
@@ -93,7 +93,7 @@ export default function Home({ exercises }) {
   const [state, setState] = useState(initialState)
   const { isExerciseShown, questions, isExerciseDone, score } = state
 
-  const showExercise = (id) => {
+  const showExercise = (id: any) => {
     setState({
       ...state,
       exerciseId: id,
@@ -104,7 +104,7 @@ export default function Home({ exercises }) {
   const hideExercise = () => {
     setState(initialState)
   }
-  const finishTest = (score) => {
+  const finishTest = (score: any) => {
     setState({
       ...state,
       isExerciseDone: true,
@@ -114,10 +114,10 @@ export default function Home({ exercises }) {
   return (
     <>
       <NavbarRoute />
-      <div className='bg-gradient-to-bl  from-green-900 to-purple-900'>
+      <div className='bg-white '>
         <div className='max-w-[85rem]  mx-auto px-4 sm:px-6 lg:px-8'>
           <div className=' h-screen grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center'>
-            <h1 className='text-white text-4xl font-bold mb-4'>ЗАДАНИЯ</h1>
+            <h1 className='text-black text-4xl font-bold mb-4'>ЗАДАНИЯ</h1>
             <Image
               className=' rounded-lg'
               src='/imgs/banner.png'
@@ -142,7 +142,7 @@ export default function Home({ exercises }) {
                   </p>
 
                   <button
-                    className='flex items-center gap-1 bg-gray-400 p-2 rounded-sm shadow-md text-white'
+                    className='flex items-center bg-blue-800 gap-1 p-2 rounded-sm shadow-md text-white'
                     onClick={hideExercise}
                   >
                     <span>

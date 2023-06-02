@@ -10,6 +10,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundImage: {
+      leti: "url('../public/imgs/leti.png')",
+    },
     extend: {
       animation: {
         "spin-slow": "spin 5s linear infinite",

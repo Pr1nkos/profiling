@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <NavbarRoute />
-      <div className='bg-gradient-to-bl from-green-200 to-purple-200'>
+      <div className='bg-white'>
         <div className='bg-blue-500 rounded-full min-h-screen justify-center p-8 flex flex-col items-center animate-loop'>
           <h1 className='text-white text-4xl font-bold mb-4'>
             ССЫЛКА НА СИМУЛЯЦИЮ

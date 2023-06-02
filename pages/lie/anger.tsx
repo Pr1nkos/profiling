@@ -28,39 +28,39 @@ export default function Home() {
             <div className='mt-5 sm:mt-10 lg:mt-0 '>
               <div className='space-y-6 sm:space-y-8 h-full w-full bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 p-4'>
                 <div className='space-y-2 md:space-y-4 '>
-                  <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200'>
+                  <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 '>
                     ЗЛОСТЬ
                   </h2>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     Когда человек испытывает злость, микродвижения его лица
                     могут измениться следующим образом:
                   </p>
 
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     1. Морщины на лбу: при злости человек может начать морщить
                     лоб, что свидетельствует о напряженности и раздражении.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     2. Сжатые губы: губы могут быть сжатыми и напряженными,
                     иногда зубы могут быть сжатыми вместе.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     3. Однобровие: при злости может появиться однобровие, что
                     свидетельствует о напряжении и гневе.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     4. Напряженные щеки: щеки могут быть напряженными и сжатыми,
                     что свидетельствует о гневе и раздражении.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     5. Напряженная челюсть: челюсть может быть напряженной и
                     сжатой, что свидетельствует о гневе и негодовании.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     6. Острые глаза: глаза могут быть острыми и сфокусированными
                     на объекте, вызывающем злость.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     7. Краснота на лице: кожа на лице может стать красной и
                     нагретой, что свидетельствует о возбуждении и гневе.
                   </p>
@@ -77,7 +77,7 @@ export default function Home() {
               />
             </div>
           </div>{" "}
-          <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200 p-8 text-center'>
+          <h2 className='font-bold text-3xl lg:text-4xl text-gray-800  p-8 text-center'>
             Эти микродвижения могут происходить одновременно или поочередно, и
             могут сильно отличаться в зависимости от индивидуальных особенностей
             человека и ситуации, вызывающей злость.

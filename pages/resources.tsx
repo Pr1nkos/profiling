@@ -8,24 +8,22 @@ export default function Home() {
     <>
       <NavbarRoute />
 
-      <div className='bg-gradient-to-bl   from-green-900 to-purple-900'>
+      <div className='bg-white '>
         <div className='max-w-[85rem]   mx-auto px-4 sm:px-6 lg:px-8'>
           <div className=' grid grid-cols-2'>
             <div className=' grid md:grid-cols-2  gap-4 md:gap-8 xl:gap-20 md:items-center'>
               <div className='pt-24 sm:mt-10 lg:mt-0 '>
-                <ol className='border-l border-neutral-300 dark:border-neutral-500'>
+                <ol className='border-l border-neutral-300 '>
                   <li>
                     <div className='flex-start flex items-center pt-3'>
                       <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full '></div>
-                      <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-                        1960-е годы
-                      </p>
+                      <p className='text-sm text-neutral-500 '>1960-е годы</p>
                     </div>
                     <div className='mb-6 ml-4 mt-2'>
                       <h4 className='mb-1.5 text-xl font-semibold'>
                         Пол Экман
                       </h4>
-                      <p className='mb-3 text-neutral-500 dark:text-neutral-300'>
+                      <p className='mb-3 text-neutral-500 '>
                         Разрабатывает систему FACS (Facial Action Coding System)
                         которая позволяет анализировать выражение лица и
                         выявлять эмоциональные состояния человека.
@@ -36,15 +34,13 @@ export default function Home() {
                   <li>
                     <div className='flex-start flex items-center pt-2'>
                       <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full '></div>
-                      <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-                        1970-е годы
-                      </p>
+                      <p className='text-sm text-black'>1970-е годы</p>
                     </div>
                     <div className='mb-6 ml-4 mt-2'>
                       <h4 className='mb-1.5 text-xl font-semibold'>
                         Джордж Масон
                       </h4>
-                      <p className='mb-3 text-neutral-500 dark:text-neutral-300'>
+                      <p className='mb-3  text-black'>
                         создает первую программу по профайлингу, которая
                         включает в себя методы анализа поведения и выражения
                         лица.
@@ -54,14 +50,12 @@ export default function Home() {
 
                   <li>
                     <div className='flex-start flex items-center pt-2'>
-                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500'></div>
-                      <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-                        1980-е годы
-                      </p>
+                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 '></div>
+                      <p className='text-sm  text-black'>1980-е годы</p>
                     </div>
                     <div className='ml-4 mt-2 pb-5'>
                       <h4 className='mb-1.5 text-xl font-semibold'>FBI</h4>
-                      <p className='mb-3 text-neutral-500 dark:text-neutral-300'>
+                      <p className='mb-3  text-black'>
                         начинает использовать профайлинг для расследования
                         преступлений.
                       </p>
@@ -69,16 +63,14 @@ export default function Home() {
                   </li>
                   <li>
                     <div className='flex-start flex items-center pt-2'>
-                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500'></div>
-                      <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-                        1990-е годы
-                      </p>
+                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 '></div>
+                      <p className='text-sm  text-black'>1990-е годы</p>
                     </div>
                     <div className='ml-4 mt-2 pb-5'>
                       <h4 className='mb-1.5 text-xl font-semibold'>
                         Джон Дуглас
                       </h4>
-                      <p className='mb-3 text-neutral-500 dark:text-neutral-300'>
+                      <p className='mb-3  text-black'>
                         бывший агент FBI, разрабатывает методику профайлинга,
                         основанную на анализе поведения преступников.
                       </p>
@@ -86,16 +78,14 @@ export default function Home() {
                   </li>
                   <li>
                     <div className='flex-start flex items-center pt-2'>
-                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500'></div>
-                      <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-                        2000-2010-е годы
-                      </p>
+                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 '></div>
+                      <p className='text-sm  text-black'>2000-2010-е годы</p>
                     </div>
                     <div className='ml-4 mt-2 pb-5'>
                       <h4 className='mb-1.5 text-xl font-semibold'>
                         Компьютерное зрение
                       </h4>
-                      <p className='mb-3 text-neutral-500 dark:text-neutral-300'>
+                      <p className='mb-3  text-black'>
                         Развитие технологий компьютерного зрения позволяет
                         автоматизировать процесс профайлинга и выявления лжи по
                         лицу.
@@ -104,8 +94,8 @@ export default function Home() {
                   </li>
                   <li>
                     <div className='flex-start flex items-center pt-2'>
-                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500'></div>
-                      <p className='text-sm text-neutral-500 dark:text-neutral-300'>
+                      <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 '></div>
+                      <p className='text-sm  text-black'>
                         2020-е годы, пик - 2023 год.
                       </p>
                     </div>
@@ -113,7 +103,7 @@ export default function Home() {
                       <h4 className='mb-1.5 text-xl font-semibold'>
                         Машинное обучение и искусственный интеллект
                       </h4>
-                      <p className='mb-3 text-neutral-500 dark:text-neutral-300'>
+                      <p className='mb-3  text-black'>
                         Машинное обучение и искусственный интеллект становятся
                         основными инструментами профайлинга и выявления лжи по
                         лицу.
@@ -133,7 +123,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <h3 className='mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300'>
+          <h3 className='mb-6 ml-3 text-2xl font-bold  text-black '>
             Основные труды:
           </h3>
           <div className='grid grid-cols-2'>
@@ -163,7 +153,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10'>
+                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 '>
                     <div className='mb-4 flex justify-between'>
                       <a
                         href='#!'
@@ -178,7 +168,7 @@ export default function Home() {
                         1978
                       </a>
                     </div>
-                    <p className='mb-6 text-neutral-700 dark:text-neutral-200'>
+                    <p className='mb-6   text-black'>
                       Пола Экмана - книга была написана в 1978 году и является
                       основополагающей в области анализа выражения лица и
                       эмоциональных состояний человека. В книге описывается
@@ -188,10 +178,12 @@ export default function Home() {
 
                     <button
                       type='button'
-                      className='inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
+                      className='inline-block rounded  border-info bg-blue-800 border-2 border-black group-hover:bg-white '
                       data-te-ripple-init
                     >
-                      ССЫЛКА
+                      <span className='relative text-white group-hover:text-black p-2'>
+                        ссылка
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -212,7 +204,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10'>
+                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5  '>
                     <div className='mb-4 flex justify-between'>
                       <a
                         href='#!'
@@ -228,7 +220,7 @@ export default function Home() {
                         1995
                       </a>
                     </div>
-                    <p className='mb-6 text-neutral-700 dark:text-neutral-200'>
+                    <p className='mb-6  text-black '>
                       книга была написана Джоном Дугласом - является введением в
                       методику профайлинга, основанную на анализе поведения
                       преступников. В книге описываются различные методы анализа
@@ -239,10 +231,12 @@ export default function Home() {
 
                     <button
                       type='button'
-                      className='inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
+                      className='inline-block rounded  border-info bg-blue-800 border-2 border-black group-hover:bg-white '
                       data-te-ripple-init
                     >
-                      ССЫЛКА
+                      <span className='relative text-white group-hover:text-black p-2'>
+                        ссылка
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -263,7 +257,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10'>
+                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5  '>
                     <div className='mb-4 flex justify-between'>
                       <a
                         href='#!'
@@ -278,7 +272,7 @@ export default function Home() {
                         1992
                       </a>
                     </div>
-                    <p className='mb-6 text-neutral-700 dark:text-neutral-200'>
+                    <p className='mb-6  text-black'>
                       Рональда Акерс - книга является обзором современных теорий
                       криминального поведения. В книге описываются
                       психологические факторы, которые могут влиять на
@@ -288,10 +282,12 @@ export default function Home() {
 
                     <button
                       type='button'
-                      className='inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
+                      className='inline-block rounded  border-info bg-blue-800 border-2 border-black group-hover:bg-white '
                       data-te-ripple-init
                     >
-                      ССЫЛКА
+                      <span className='relative text-white group-hover:text-black p-2'>
+                        ссылка
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -312,7 +308,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10'>
+                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5  '>
                     <div className='mb-4 flex justify-between'>
                       <a
                         href='#!'
@@ -327,7 +323,7 @@ export default function Home() {
                         2007
                       </a>
                     </div>
-                    <p className='mb-6 text-neutral-700 dark:text-neutral-200'>
+                    <p className='mb-6  text-black'>
                       Майкл Тотт - является обзором исследований в области
                       свидетельских показаний. В книге описываются различные
                       факторы, которые могут влиять на достоверность
@@ -337,10 +333,12 @@ export default function Home() {
 
                     <button
                       type='button'
-                      className='inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
+                      className='inline-block rounded  border-info bg-blue-800 border-2 border-black group-hover:bg-white '
                       data-te-ripple-init
                     >
-                      ССЫЛКА
+                      <span className='relative text-white group-hover:text-black p-2'>
+                        ссылка
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -361,7 +359,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10'>
+                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5  '>
                     <div className='mb-4 flex justify-between'>
                       <a
                         href='#!'
@@ -377,7 +375,7 @@ export default function Home() {
                         2015
                       </a>
                     </div>
-                    <p className='mb-6 text-neutral-700 dark:text-neutral-200'>
+                    <p className='mb-6  text-black'>
                       Шен Шен и др. - книга является обзором современных методов
                       распознавания выражений лица с помощью машинного обучения.
                       В книге описываются различные алгоритмы и подходы к
@@ -386,10 +384,12 @@ export default function Home() {
 
                     <button
                       type='button'
-                      className='inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
+                      className='inline-block rounded  border-info bg-blue-800 border-2 border-black group-hover:bg-white '
                       data-te-ripple-init
                     >
-                      ССЫЛКА
+                      <span className='relative text-white group-hover:text-black p-2'>
+                        ссылка
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -410,7 +410,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10'>
+                  <div className='mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5  '>
                     <div className='mb-4 flex justify-between'>
                       <a
                         href='#!'
@@ -426,7 +426,7 @@ export default function Home() {
                         2016
                       </a>
                     </div>
-                    <p className='mb-6 text-neutral-700 dark:text-neutral-200'>
+                    <p className='mb-6  text-black'>
                       Жан-Франсуа Мартин и др. - в книге указываются современные
                       системы распознавания лица и анализа выражений для
                       понимания человеческого поведения. В книге описываются
@@ -437,10 +437,12 @@ export default function Home() {
 
                     <button
                       type='button'
-                      className='inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10'
+                      className='inline-block rounded  border-info bg-blue-800 border-2 border-black group-hover:bg-white '
                       data-te-ripple-init
                     >
-                      ССЫЛКА
+                      <span className='relative text-white group-hover:text-black p-2'>
+                        ссылка
+                      </span>
                     </button>
                   </div>
                 </div>

@@ -22,7 +22,7 @@ export default function IndexPage() {
   return (
     <>
       <NavbarRoute />
-      <div className='bg-gradient-to-bl from-green-200 to-purple-200'>
+      <div className=' bg-white'>
         <Head>
           <title>Профайлинг</title>
           <link rel='shortcut icon' href='/favicon.ico' />

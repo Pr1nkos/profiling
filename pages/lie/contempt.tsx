@@ -28,35 +28,35 @@ export default function Home() {
             <div className='mt-5 sm:mt-10 lg:mt-0 '>
               <div className='space-y-6 sm:space-y-8 h-full w-full bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 p-4'>
                 <div className='space-y-2 md:space-y-4 '>
-                  <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200'>
+                  <h2 className='font-bold text-3xl lg:text-4xl text-gray-800'>
                     ОТВРАЩЕНИЕ
                   </h2>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     Когда человек испытывает отвращение, микродвижения его лица
                     могут измениться следующим образом:
                   </p>
 
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     1. Скривленные губы: губы могут быть скривлены или выпячены
                     вперед, что свидетельствует о неприязни и отвращении.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     2. Морщины на носу: при отвращении человек может начать
                     морщить нос, что свидетельствует о неприязни и отторжении.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     3. Суженные глаза: глаза могут быть суженными и
                     напряженными, что свидетельствует о неприязни и отвращении.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     4. Открытый рот: рот может быть открытым и натянутым, что
                     свидетельствует о неприязни и отвращении.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     5. Отталкивающие жесты: человек может делать жесты, которые
                     отталкивают объект или ситуацию, вызывающую отвращение.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     6. Бледность на лице: кожа на лице может стать бледной и
                     напряженной, что свидетельствует о возбуждении и отвращении.
                   </p>
@@ -73,7 +73,7 @@ export default function Home() {
               />
             </div>
           </div>{" "}
-          <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200 p-8 text-center'>
+          <h2 className='font-bold text-3xl lg:text-4xl text-gray-800  p-8 text-center'>
             Эти микродвижения также могут происходить одновременно или
             поочередно, и могут сильно отличаться в зависимости от
             индивидуальных особенностей человека и ситуации, вызывающей

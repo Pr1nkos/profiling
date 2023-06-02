@@ -8,34 +8,32 @@ function DropdownPsy() {
     <div>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className=' p-1 w-full items-center justify-between font-bold text-lg rounded-lg border-4 border-transparent active:border-white duration-300 active:text-white flex'
+        className='w-full items-center justify-between font-bold text-lg text-center rounded-lg border-4 border-transparent  duration-300  flex'
       >
         Оценка психотипа
         {!isOpen ? (
           <AiOutlineCaretUp className='h-8' />
         ) : (
-          <AiOutlineCaretDown />
+          <AiOutlineCaretDown className='h-8' />
         )}
       </button>
 
       {isOpen && (
-        <div className='bg-blue-400 absolute bottom-20 flex  flex-col items-start rounded-lg p-4 text-center w-full'>
-          <div>
-            <div className='flex w-full justify-between hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent'>
-              <Link href='/education/psychotype-analysis/'>
-                <p>Начало модуля</p>
-              </Link>
-            </div>
-            <div className='flex w-full justify-between hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent'>
-              <Link href='/education/psychotype-analysis/body-language'>
-                <p>Язык тела</p>
-              </Link>
-            </div>
-            <div className='flex w-full justify-between hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent'>
-              <Link href='/education/psychotype-analysis/psychotype-cases'>
-                <p>Кейсы</p>
-              </Link>
-            </div>
+        <div className='border-solid border-2 bg-blue-800  absolute bottom-20 flex flex-col items-start rounded-sm text-center w-full'>
+          <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
+            <Link href='/education/psychotype-analysis/'>
+              <p>Начало модуля</p>
+            </Link>
+          </div>
+          <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
+            <Link href='/education/psychotype-analysis/body-language'>
+              <p>Язык тела</p>
+            </Link>
+          </div>
+          <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
+            <Link href='/education/psychotype-analysis/psychotype-cases'>
+              <p>Кейсы</p>
+            </Link>
           </div>
         </div>
       )}

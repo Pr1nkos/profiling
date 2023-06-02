@@ -28,34 +28,34 @@ export default function Home() {
             <div className='mt-5 sm:mt-10 lg:mt-0 '>
               <div className='space-y-6 sm:space-y-8 h-full w-full bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 p-4'>
                 <div className='space-y-2 md:space-y-4 '>
-                  <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200'>
+                  <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 '>
                     ИЗУМЛЕНИЕ
                   </h2>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     При эмоции изумления микродвижения лица могут измениться
                     следующим образом:
                   </p>
 
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     1. Разинутый рот. Один из наиболее ярких проявлений
                     изумления - это широко открытый рот, который может выражать
                     удивление и недоумение.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     2. Брови могут подняться и разойтись в стороны, что создает
                     впечатление удивления и непонимания.Брови могут подняться и
                     разойтись в стороны, что создает впечатление удивления и
                     непонимания.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     3. Приподнятые щеки. Щеки могут подниматься и немного
                     выпуклыми, что выражает изумление и удивление.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     4. Расширенные зрачки. Глаза могут расширяться, что создает
                     впечатление удивления и интереса.
                   </p>
-                  <p className='text-gray-300'>
+                  <p className='text-black'>
                     5. Задержка дыхания. Человек может задержать дыхание на
                     мгновение, выражая свое изумление и недоумение.
                   </p>
@@ -72,7 +72,7 @@ export default function Home() {
               />
             </div>
           </div>{" "}
-          <h2 className='font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200 p-8 text-center'>
+          <h2 className='font-bold text-3xl lg:text-4xl text-gray-800  p-8 text-center'>
             Микродвижения лица при изумлении выражают эмоциональную
             неожиданность и интерес, а также могут вызывать любопытство у
             окружающих и создавать напряженную атмосферу.

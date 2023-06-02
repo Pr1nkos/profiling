@@ -11,7 +11,6 @@ import { motion } from "framer-motion"
 
 function SocialIcons() {
   const socialLinks = [
-    { name: "Github", icon: <FiGithub />, link: "https://www.github.com" },
     {
       name: "Youtube",
       icon: <FiYoutube />,
@@ -34,7 +33,7 @@ function SocialIcons() {
         delay: 1.95,
       }}
     >
-      <ul className='social-icons-list'>
+      <ul className='social-icons-list text-black'>
         {socialLinks.map(({ name, icon, link }) => (
           <li key={name} title={name} className='social-icons-list-item'>
             <Link

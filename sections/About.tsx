@@ -23,12 +23,11 @@ function About() {
       }}
     >
       <div className='title'>
-        <h2>О платформе</h2>
+        <h2 className='text-2xl'>О платформе</h2>
       </div>
-      <div className='about-grid'>
+      <div className='about-grid text-black'>
         <div className='about-grid-info'>
-          <p className='about-grid-info-text'></p>
-          <p className='about-grid-info-text'>
+          <p className='about-grid-info-text  '>
             Добро пожаловать на платформу обучения профайлингу и симуляции
             эмоций! Здесь вы сможете изучить современное представление о том,
             как выявлять ложь по лицевым микродвижениям.

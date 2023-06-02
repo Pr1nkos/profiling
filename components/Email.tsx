@@ -7,13 +7,16 @@ function Email() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
-        duration: 0.3,
+        duration: 0.2,
         ease: "easeInOut",
-        delay: 1.95,
+        delay: 1.45,
       }}
     >
-      <a href='mailto:profilingPOLLI@gmail.com' className='email-link'>
-        profilingPOLLI@gmail.com
+      <a
+        href='mailto:pnafonin@etu.ru'
+        className='email-link text-black hover:text-blue-900'
+      >
+        pnafonin@etu.ru
       </a>
     </motion.div>
   )

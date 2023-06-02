@@ -14,7 +14,7 @@ function Experience() {
 
   const expereinces = [
     {
-      name: "1",
+      name: "Занятие 1",
       url: "",
       shortDescription: [
         "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
@@ -22,7 +22,7 @@ function Experience() {
       ],
     },
     {
-      name: "2",
+      name: "Занятие 2",
       url: "",
       shortDescription: [
         "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
@@ -30,7 +30,7 @@ function Experience() {
       ],
     },
     {
-      name: "3",
+      name: "Занятие 3",
       url: "",
       shortDescription: [
         "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
@@ -38,7 +38,7 @@ function Experience() {
       ],
     },
     {
-      name: "Задания",
+      name: "Занятие 4",
       url: "",
       shortDescription: [
         "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
@@ -46,7 +46,47 @@ function Experience() {
       ],
     },
     {
-      name: "Ресурсы",
+      name: "Занятие 5",
+      url: "",
+      shortDescription: [
+        "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
+        "принятых на вооружение сообществом профайлинга по всему миру.",
+      ],
+    },
+    {
+      name: "Занятие 6",
+      url: "",
+      shortDescription: [
+        "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
+        "принятых на вооружение сообществом профайлинга по всему миру.",
+      ],
+    },
+    {
+      name: "Занятие 7",
+      url: "",
+      shortDescription: [
+        "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
+        "принятых на вооружение сообществом профайлинга по всему миру.",
+      ],
+    },
+    {
+      name: "Занятие 8",
+      url: "",
+      shortDescription: [
+        "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
+        "принятых на вооружение сообществом профайлинга по всему миру.",
+      ],
+    },
+    {
+      name: "Занятие 9",
+      url: "",
+      shortDescription: [
+        "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
+        "принятых на вооружение сообществом профайлинга по всему миру.",
+      ],
+    },
+    {
+      name: "Занятие 10",
       url: "",
       shortDescription: [
         "В этом разделе будет предоставлена информация по современному представлению о базовых эмоций,",
@@ -67,17 +107,17 @@ function Experience() {
         hidden: { opacity: 0, y: 0 },
       }}
     >
-      <div className='title'>
-        <h2>Структура</h2>
+      <div className='title text-black'>
+        <h2 className='text-black'>Структура</h2>
       </div>
       <div className='title'>
-        <p className='about-grid-info-text'>
+        <p className='about-grid-info-text text-black'>
           Мы предоставляем курсы обучения, которые помогут вам научиться
           распознавать эмоции и микродвижения лица. В нашем курсе вы получите
           следующие знания:
         </p>
       </div>
-      <div className='container'>
+      <div className='container text-black'>
         <ul className='exp-slider'>
           <div className='underline'></div>
           {expereinces.map((expereince, index) => {
@@ -94,7 +134,7 @@ function Experience() {
             )
           })}
         </ul>
-        <div className='exp-details'>
+        <div className='exp-details text-black'>
           <div className='exp-details-position'>
             <h3>
               <span className='exp-details-position-company'>
@@ -105,7 +145,7 @@ function Experience() {
               </span>
             </h3>
 
-            <ul className='exp-details-list'>
+            <ul className='exp-details-list text-black'>
               {expereinces[selected].shortDescription.map(
                 (description, index) => (
                   <li key={index} className='exp-details-list-item'>

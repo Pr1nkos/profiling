@@ -9,11 +9,10 @@
   &-title {
     color: var(--theme-color);
     font-size: var(--tsm2);
-    font-family: var(--fira-code);
   }
   &-title-large {
     font-size: var(--tgiant);
-    font-family: "Bender";
+
     color: var(--light-slate);
   }
   &-title-sub {
@@ -26,7 +25,6 @@
     letter-spacing: 0.07rem;
     line-height: 1.6rem;
     font-weight: 600;
-    font-family: "Bender";
   }
   &-button {
     margin-top: 2rem;

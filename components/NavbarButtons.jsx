@@ -17,13 +17,13 @@ const NavbarButtons = () => {
 
   return (
     <>
-      <nav className='z-50 fixed bottom-0 w-full h-24 shadow-xl bg-orange-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
+      <nav className='z-50 fixed bottom-0 w-full h-24 shadow-xl bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100  '>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
           <Link href='/'>
             <button className='btn relative inline-block font-medium group'>
               <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-              <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300 '></span>
-              <span className='relative text-black group-hover:text-white  font-bold'>
+              <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white '></span>
+              <span className='relative text-white group-hover:text-black  font-bold'>
                 Обратно в меню
               </span>
             </button>
@@ -35,8 +35,8 @@ const NavbarButtons = () => {
                 <Link href='/lie/anger'>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-red-400 '></span>
-                    <span className='relative text-black group-hover:text-white  font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white '></span>
+                    <span className='relative text-white group-hover:text-black  font-bold'>
                       Злость
                     </span>
                   </button>
@@ -47,8 +47,8 @@ const NavbarButtons = () => {
                 <Link href='/lie/happiness'>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-indigo-300 '></span>
-                    <span className='relative text-black group-hover:text-white  font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white'></span>
+                    <span className='relative text-white group-hover:text-black   font-bold'>
                       Счастье
                     </span>
                   </button>
@@ -58,8 +58,8 @@ const NavbarButtons = () => {
                 <Link href='/lie/sadness'>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-blue-400 '></span>
-                    <span className='relative text-black group-hover:text-white  font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white'></span>
+                    <span className='relative text-white group-hover:text-black  font-bold'>
                       Грусть
                     </span>
                   </button>
@@ -69,8 +69,8 @@ const NavbarButtons = () => {
                 <Link href='/lie/surprize'>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-orange-300 '></span>
-                    <span className='relative text-black group-hover:text-white  font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white '></span>
+                    <span className='relative text-white group-hover:text-black  font-bold'>
                       Удивление
                     </span>
                   </button>
@@ -80,8 +80,8 @@ const NavbarButtons = () => {
                 <Link href='/lie/contempt'>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-green-300 '></span>
-                    <span className='relative text-black group-hover:text-white  font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white'></span>
+                    <span className='relative text-white group-hover:text-black  font-bold'>
                       Презрение
                     </span>
                   </button>
@@ -91,8 +91,8 @@ const NavbarButtons = () => {
                 <Link href='/lie/fear'>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-                    <span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-gray-300 '></span>
-                    <span className='relative text-black group-hover:text-white  font-bold'>
+                    <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white '></span>
+                    <span className='relative text-white group-hover:text-black  font-bold'>
                       Страх
                     </span>
                   </button>
@@ -109,7 +109,7 @@ const NavbarButtons = () => {
         <div
           className={
             menuOpen
-              ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen p-10 ease-in duration-500 shadow-xl bg-amber-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md  border border-gray-100"
+              ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen p-10 ease-in duration-500 shadow-xl bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md  border border-gray-100"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >

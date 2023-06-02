@@ -3,13 +3,15 @@ footer {
   justify-content: center;
   align-content: center;
   padding: 15px;
+  background-color: #f6f7fa;
+  color: black;
   min-height: 70px;
   .footer-link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    color: var(--light-text);
+
     outline: 2px dashed transparent;
     transition: 0.3s ease-in-out;
     padding: 10px;
@@ -18,7 +20,6 @@ footer {
       outline-color: var(--theme-color);
     }
     .footer-info {
-      font-family: var(--fira-code);
       text-align: center;
     }
     .footer-git {

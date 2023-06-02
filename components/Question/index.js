@@ -75,7 +75,7 @@ export default function Question({ questions, hideExercise, finishTest }) {
   return (
     <div>
       <button
-        className='flex items-center gap-1 bg-gray-400 p-2 rounded-sm shadow-md text-white'
+        className='flex items-center gap-1 bg-gray-400 p-2 rounded-sm shadow-md text-black'
         onClick={hideExercise}
       >
         <span>

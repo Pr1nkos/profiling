@@ -2,8 +2,6 @@
   margin: 15rem auto;
   max-width: 700px;
   .title {
-    font-family: "Bender";
-    color: var(--lightest-slate);
     position: relative;
     h2 {
       margin-bottom: 2rem;
@@ -23,7 +21,6 @@
         width: 300px;
         height: 2px;
         margin-left: 380px;
-        background-color: var(--lightest-navy);
       }
     }
   }
@@ -63,12 +60,11 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          color: var(--slate);
-          font-family: var(--fira-code);
-          font-size: var(--tsm1);
+          font-weight: bold;
         }
         &:hover {
-          background-color: var(--light-navy);
+          background-color: #003172;
+          color: white;
           span {
             color: var(--theme-color);
           }
@@ -82,7 +78,7 @@
     }
     .exp-details {
       height: 40vh;
-      font-family: "Bender";
+
       &-position {
         color: var(--lightest-slate);
         &-company {
