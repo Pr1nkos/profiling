@@ -6,12 +6,13 @@
     }
   },
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/public/*": ["public/*"]
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "ESnext"
-    ],
+    "lib": ["dom", "dom.iterable", "ESnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -36,7 +37,5 @@
     "pages/api/auth/[...nextauth].ts",
     "pages/auth/signin.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

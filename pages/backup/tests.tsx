@@ -1,10 +1,10 @@
-import NavbarRoute from "../components/Navbar"
-import Contact from "../components/footer"
+import NavbarRoute from "../../components/Navbar"
+import Contact from "../../components/footer"
 import Image from "next/image"
 import { useRouter } from "next/router"
 import { FaArrowLeft } from "react-icons/fa"
-import Question from "../components/Question"
-import ExerciseList from "../components/ExerciseList"
+import Question from "../../components/Question"
+import ExerciseList from "../../components/ExerciseList"
 import { useState } from "react"
 
 export function getServerSideProps() {
