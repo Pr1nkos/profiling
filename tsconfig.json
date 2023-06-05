@@ -9,7 +9,8 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "@/sections/*": ["sections/*"],
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "ESnext"],
@@ -36,6 +37,6 @@
     "@Prisma/client",
     "pages/api/auth/[...nextauth].ts",
     "pages/auth/signin.tsx"
-  ],
+, "components/SideBar.jsx"  ],
   "exclude": ["node_modules"]
 }

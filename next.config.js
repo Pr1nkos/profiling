@@ -7,11 +7,11 @@ const nextConfig = {
         destination: "/lessons",
         permanent: true,
       },
-      {
-        source: "/backup/:path*",
-        destination: "/lessons",
-        permanent: true,
-      },
+      // {
+      //   source: "/backup/:path*",
+      //   destination: "/lessons",
+      //   permanent: true,
+      // },
     ];
   },
 };
