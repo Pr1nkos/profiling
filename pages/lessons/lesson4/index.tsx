@@ -45,7 +45,7 @@ export default function IndexPage() {
             </header>
             <div id="3" className="scroll-mt-24 min-h-[25rem]">
               <h2 className="text-lg font-semibold text-gray-800  ">
-                Занятие 4 - Лицевая истема кодирования FACS
+                Занятие 4 - Язык тела
               </h2>
               <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left text-gray-500 ">

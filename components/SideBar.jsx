@@ -134,41 +134,6 @@ export default function SideBar() {
                   Занятие 5
                 </Link>
               </li>
-              <li className="block py-1 pl-4 -ml-px border-l-2 border-transparent text-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hs-scrollspy-active:font-medium hs-scrollspy-active: text-blue-800   active">
-                <Link
-                  href="/lessons/lesson6/"
-                >
-                  Занятие 6
-                </Link>
-              </li>
-              <li className="block py-1 pl-4 -ml-px border-l-2 border-transparent text-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hs-scrollspy-active:font-medium hs-scrollspy-active: text-blue-800   active">
-                <Link
-                  href="/lessons/lesson7/"
-                >
-                  Занятие 7
-                </Link>
-              </li>
-              <li className="block py-1 pl-4 -ml-px border-l-2 border-transparent text-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hs-scrollspy-active:font-medium hs-scrollspy-active: text-blue-800   active">
-                <Link
-                  href="/lessons/lesson8/"
-                >
-                  Занятие 8
-                </Link>
-              </li>
-              <li className="block py-1 pl-4 -ml-px border-l-2 border-transparent text-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hs-scrollspy-active:font-medium hs-scrollspy-active: text-blue-800   active">
-                <Link
-                  href="/lessons/lesson9/"
-                >
-                  Занятие 9
-                </Link>
-              </li>
-              <li className="block py-1 pl-4 -ml-px border-l-2 border-transparent text-sm text-slate-700 hover:border-slate-400 hover:text-slate-900 hs-scrollspy-active:font-medium hs-scrollspy-active: text-blue-800   active">
-                <Link
-                  href="/lessons/lesson10/"
-                >
-                  Занятие 10
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>

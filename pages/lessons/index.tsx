@@ -111,7 +111,7 @@ export default function IndexPage() {
                 </div>
                 <div id="2" className="scroll-mt-24 min-h-[25rem]">
                   <h2 className="text-lg font-semibold text-gray-800  ">
-                    Занятие 2 - Психотипология личности
+                    Занятие 2 - Анатомо-функциональные принципы профайлинга
                   </h2>
                   <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table className="w-full text-sm text-left text-gray-500 ">
@@ -131,8 +131,7 @@ export default function IndexPage() {
                             scope="row"
                             className="px-6 py-4 font-bold uppercase text-gray-900   "
                           >
-                            Изучение характеров и их влияние на поведение в
-                            рабочей среде
+                            Изучение анатомии ЧЛО и базовых принципов физиологических состояний лица при определенных эмоциях
                           </th>
                           <td className="px-6 py-4">
                             <a href="#" className="font-bold text-blue-600 ">
@@ -147,7 +146,7 @@ export default function IndexPage() {
                             scope="row"
                             className="px-6 py-4 font-medium text-gray-900   "
                           >
-                            Что такое психотипология личности?
+                            Анатомия ЧЛО
                           </th>
                           <td className="px-6 py-4"></td>
                         </tr>
@@ -158,7 +157,7 @@ export default function IndexPage() {
                             scope="row"
                             className="px-6 py-4 font-medium text-gray-900   "
                           >
-                            Описание различных типов личности
+                            Физиология эмоций
                           </th>
                           <td className="px-6 py-4"></td>
                         </tr>
@@ -169,7 +168,7 @@ export default function IndexPage() {
                             scope="row"
                             className="px-6 py-4 font-medium text-gray-900   "
                           >
-                            Влияние психотипа на работу в команде
+                            Физиология лжи
                           </th>
                           <td className="px-6 py-4"></td>
                         </tr>
@@ -179,7 +178,7 @@ export default function IndexPage() {
                 </div>
                 <div id="3" className="scroll-mt-24 min-h-[25rem]">
                   <h2 className="text-lg font-semibold text-gray-800  ">
-                    Занятие 3 - Лицевая истема кодирования FACS
+                    Занятие 3 - Лицевая система кодирования FACS
                   </h2>
                   <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table className="w-full text-sm text-left text-gray-500 ">
@@ -246,7 +245,73 @@ export default function IndexPage() {
                     </table>
                   </div>
                 </div>
-
+                <div id="3" className="scroll-mt-24 min-h-[25rem]">
+                  <h2 className="text-lg font-semibold text-gray-800  ">
+                    Занятие 4 - Язык тела
+                  </h2>
+                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table className="w-full text-sm text-left text-gray-500 ">
+                      <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
+                        <tr>
+                          <th scope="col" className="px-6 py-3">
+                            СОДЕРЖАНИЕ ЗАНЯТИЯ
+                          </th>
+                          <th scope="col" className="px-6 py-3">
+                            Статус
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="bg-white border-b ">
+                          <th
+                            scope="row"
+                            className="px-6 py-4 font-bold uppercase text-gray-900   "
+                          >
+                            Определение взаимосвязи телодвижений и эмоций
+                          </th>
+                          <td className="px-6 py-4">
+                            <a href="#" className="font-bold text-blue-600 ">
+                              Начать
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr className="bg-white border-b ">
+                          <th
+                            scope="row"
+                            className="px-6 py-4 font-medium text-gray-900   "
+                          >
+                            Телесное выражение эмоций
+                          </th>
+                          <td className="px-6 py-4"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr className="bg-white border-b ">
+                          <th
+                            scope="row"
+                            className="px-6 py-4 font-medium text-gray-900   "
+                          >
+                            Метафорические ощущения
+                          </th>
+                          <td className="px-6 py-4"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr className="bg-white border-b ">
+                          <th
+                            scope="row"
+                            className="px-6 py-4 font-medium text-gray-900   "
+                          >
+                            Взаимосвязь между физиологией и эмоциями
+                          </th>
+                          <td className="px-6 py-4"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
                 <div id="5" className="scroll-mt-24 min-h-[25rem]">
                   <h2 className="text-lg font-semibold text-gray-800  ">
                     Занятие 5 - Основные признаки лжи
@@ -307,348 +372,7 @@ export default function IndexPage() {
                             scope="row"
                             className="px-6 py-4 font-medium text-gray-900   "
                           >
-                            Как выявить ложь?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div id="6" className="scroll-mt-24 min-h-[25rem]">
-                  <h2 className="text-lg font-semibold text-gray-800  ">
-                    Занятие 6 - Искусство чтения людей
-                  </h2>
-                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 ">
-                      <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
-                        <tr>
-                          <th scope="col" className="px-6 py-3">
-                            СОДЕРЖАНИЕ ЗАНЯТИЯ
-                          </th>
-                          <th scope="col" className="px-6 py-3">
-                            Статус
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-bold uppercase text-gray-900   "
-                          >
-                            Изучение феномена намеренно скрываемой информации
-                          </th>
-                          <td className="px-6 py-4">
-                            <a href="#" className="font-bold text-blue-600 ">
-                              Начать
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Что такое намеренно скрываемая информация?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как ее выявить?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как использовать знания о намеренно скрываемой
-                            информации в работе с коллегами?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div id="7" className="scroll-mt-24 min-h-[25rem]">
-                  <h2 className="text-lg font-semibold text-gray-800  ">
-                    Занятие 7 - Роль значимости в детекции лжи
-                  </h2>
-                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 ">
-                      <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
-                        <tr>
-                          <th scope="col" className="px-6 py-3">
-                            СОДЕРЖАНИЕ ЗАНЯТИЯ
-                          </th>
-                          <th scope="col" className="px-6 py-3">
-                            Статус
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-bold uppercase text-gray-900   "
-                          >
-                            Оценка значимости стимула, классификация стимулов
-                          </th>
-                          <td className="px-6 py-4">
-                            <a href="#" className="font-bold text-blue-600 ">
-                              Начать
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Что такое значимость стимула?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как оценить значимость стимула?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как классифицировать стимулы?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div id="8" className="scroll-mt-24 min-h-[25rem]">
-                  <h2 className="text-lg font-semibold text-gray-800 whitespace-normal ">
-                    Занятие 8 - Признаки проявления стресса в распознавании лжи
-                  </h2>
-                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 ">
-                      <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
-                        <tr>
-                          <th scope="col" className="px-6 py-3">
-                            СОДЕРЖАНИЕ ЗАНЯТИЯ
-                          </th>
-                          <th scope="col" className="px-6 py-3">
-                            Статус
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-bold uppercase text-gray-900  "
-                          >
-                            Изучение разновидностей стресса, стадий общего
-                            адаптационного синдрома, точки ориентировочного
-                            замирания
-                          </th>
-                          <td className="px-6 py-4">
-                            <a href="#" className="font-bold text-blue-600 ">
-                              Начать
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Что такое стресс?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Описание различных разновидностей стресса
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как распознать ложь при проявлении стресса?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div id="9" className="scroll-mt-24 min-h-[25rem]">
-                  <h2 className="text-lg font-semibold text-gray-800  ">
-                    Занятие 9 - Структура вегетативной нервной системы
-                  </h2>
-                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 ">
-                      <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
-                        <tr>
-                          <th scope="col" className="px-6 py-3">
-                            СОДЕРЖАНИЕ ЗАНЯТИЯ
-                          </th>
-                          <th scope="col" className="px-6 py-3">
-                            Статус
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-bold uppercase text-gray-900   "
-                          >
-                            Функции симпатической и парасимпатической нервной
-                            системы, основные признаки лжи в ВНС.
-                          </th>
-                          <td className="px-6 py-4">
-                            <a href="#" className="font-bold text-blue-600 ">
-                              Начать
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Что такое вегетативная нервная система?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Описание функций симпатической и парасимпатической
-                            нервной системы.
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как распознать ложь по признакам в ВНС?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div id="10" className="scroll-mt-24 min-h-[25rem]">
-                  <h2 className="text-lg font-semibold text-gray-800  ">
-                    Занятие 10 - Речевые паттерны лжи
-                  </h2>
-                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 ">
-                      <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
-                        <tr>
-                          <th scope="col" className="px-6 py-3">
-                            СОДЕРЖАНИЕ ЗАНЯТИЯ
-                          </th>
-                          <th scope="col" className="px-6 py-3">
-                            Статус
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-bold uppercase text-gray-900   "
-                          >
-                            Изучение основных признаков и способов выявления
-                            паттернов лжи.
-                          </th>
-                          <td className="px-6 py-4">
-                            <a href="#" className="font-bold text-blue-600 ">
-                              Начать
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Что такое речевые паттерны лжи?
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Описание основных признаков лжи в речи
-                          </th>
-                          <td className="px-6 py-4"></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className="bg-white border-b ">
-                          <th
-                            scope="row"
-                            className="px-6 py-4 font-medium text-gray-900   "
-                          >
-                            Как выявить ложь по речевым паттернам?
+                            Понятие истины
                           </th>
                           <td className="px-6 py-4"></td>
                         </tr>
