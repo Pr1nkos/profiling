@@ -117,7 +117,7 @@ export default function Home({ exercises }) {
       <div className='bg-white '>
         <div className='max-w-[85rem]  mx-auto px-4 sm:px-6 lg:px-8'>
           <div className=' h-screen grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center'>
-            <h1 className='text-black text-4xl font-bold mb-4'>ЗАДАНИЯ</h1>
+            {/* <h1 className='text-black text-4xl font-bold mb-4'>ЗАДАНИЯ</h1> */}
             <Image
               className=' rounded-lg'
               src='/imgs/banner.png'

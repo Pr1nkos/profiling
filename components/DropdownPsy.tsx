@@ -21,17 +21,17 @@ function DropdownPsy() {
       {isOpen && (
         <div className='border-solid border-2 bg-blue-800  absolute bottom-20 flex flex-col items-start rounded-sm text-center w-full'>
           <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
-            <Link href='/education/psychotype-analysis/'>
+            <Link href='/lesson1/psychotype-analysis/'>
               <p>Начало модуля</p>
             </Link>
           </div>
           <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
-            <Link href='/education/psychotype-analysis/body-language'>
+            <Link href='/lesson1/psychotype-analysis/body-language'>
               <p>Язык тела</p>
             </Link>
           </div>
           <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
-            <Link href='/education/psychotype-analysis/psychotype-cases'>
+            <Link href='/lesson1/psychotype-analysis/psychotype-cases'>
               <p>Кейсы</p>
             </Link>
           </div>

@@ -294,10 +294,7 @@ export default function IndexPage() {
                             рабочей среде
                           </th>
                           <td className='px-6 py-4'>
-                            <a
-                              href='/lesson2'
-                              className='font-bold text-blue-600 '
-                            >
+                            <a href='#' className='font-bold text-blue-600 '>
                               Начать
                             </a>
                           </td>
@@ -365,10 +362,7 @@ export default function IndexPage() {
                             кодирования точек FACS, практическое применение
                           </th>
                           <td className='px-6 py-4'>
-                            <a
-                              href='/lesson3'
-                              className='font-bold text-blue-600 '
-                            >
+                            <a href='#' className='font-bold text-blue-600 '>
                               Начать
                             </a>
                           </td>
@@ -412,77 +406,6 @@ export default function IndexPage() {
                   </div>
                 </div>
 
-                <div id='4' className='scroll-mt-24 min-h-[25rem]'>
-                  <h2 className='text-lg font-semibold text-gray-800  '>
-                    Занятие 4 - Основные признаки лжи
-                  </h2>
-                  <div className='relative overflow-x-auto shadow-md sm:rounded-lg'>
-                    <table className='w-full text-sm text-left text-gray-500 '>
-                      <thead className='text-xs text-gray-700 uppercase bg-gray-50  '>
-                        <tr>
-                          <th scope='col' className='px-6 py-3'>
-                            СОДЕРЖАНИЕ ЗАНЯТИЯ
-                          </th>
-                          <th scope='col' className='px-6 py-3'>
-                            Статус
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className='bg-white border-b '>
-                          <th
-                            scope='row'
-                            className='px-6 py-4 font-bold uppercase text-gray-900   '
-                          >
-                            Изучение различных стратегий лжи и способов их
-                            выявления
-                          </th>
-                          <td className='px-6 py-4'>
-                            <a
-                              href='/lesson4'
-                              className='font-bold text-blue-600 '
-                            >
-                              Начать
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className='bg-white border-b '>
-                          <th
-                            scope='row'
-                            className='px-6 py-4 font-medium text-gray-900   '
-                          >
-                            Что такое ложь?
-                          </th>
-                          <td className='px-6 py-4'></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className='bg-white border-b '>
-                          <th
-                            scope='row'
-                            className='px-6 py-4 font-medium text-gray-900   '
-                          >
-                            Описание различных стратегий лжи
-                          </th>
-                          <td className='px-6 py-4'></td>
-                        </tr>
-                      </tbody>
-                      <tbody>
-                        <tr className='bg-white border-b '>
-                          <th
-                            scope='row'
-                            className='px-6 py-4 font-medium text-gray-900   '
-                          >
-                            Как выявить ложь?
-                          </th>
-                          <td className='px-6 py-4'></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
                 <div id='5' className='scroll-mt-24 min-h-[25rem]'>
                   <h2 className='text-lg font-semibold text-gray-800  '>
                     Занятие 5 - Основные признаки лжи
@@ -509,10 +432,7 @@ export default function IndexPage() {
                             выявления
                           </th>
                           <td className='px-6 py-4'>
-                            <a
-                              href='/lesson5'
-                              className='font-bold text-blue-600 '
-                            >
+                            <a href='#' className='font-bold text-blue-600 '>
                               Начать
                             </a>
                           </td>

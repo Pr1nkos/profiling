@@ -120,7 +120,7 @@ const NavbarButtons = () => {
           </div>
           <div className='flex-col py-4'>
             <ul>
-              <Link href='/education'>
+              <Link href='/lesson1'>
                 <li className='py-4 cursor-pointer'>Курс по профайлингу</li>
               </Link>
               <Link href='/emotions'>
@@ -131,9 +131,9 @@ const NavbarButtons = () => {
               <Link href='/lie'>
                 <li className='py-4 cursor-pointer'>Симуляция эмоций</li>
               </Link>
-              <Link href='/tests'>
+              {/* <Link href='/tests'>
                 <li className='py-4 cursor-pointer'>Задания</li>
-              </Link>
+              </Link> */}
               <Link href='/resources'>
                 <li className='py-4 cursor-pointer'>Ресурсы</li>
               </Link>

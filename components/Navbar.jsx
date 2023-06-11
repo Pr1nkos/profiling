@@ -29,13 +29,13 @@ const NavbarRoute = () => {
           </Link>
           <div className='hidden sm:flex'>
             <ul className='hidden sm:flex'>
-              <Link href='/education'>
+              <Link href='/lesson1'>
                 <li className=''>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
                     <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black group-hover:bg-white '></span>
                     <span className='relative text-white group-hover:text-black  font-bold'>
-                      Курс по профайлингу
+                      Гипермедийный контент
                     </span>
                   </button>
                 </li>
@@ -52,7 +52,7 @@ const NavbarRoute = () => {
                   </button>
                 </li>
               </Link>
-              <Link href='/tests'>
+              {/* <Link href='/tests'>
                 <li className='ml-10 '>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
@@ -62,8 +62,8 @@ const NavbarRoute = () => {
                     </span>
                   </button>
                 </li>
-              </Link>
-              <Link href='/resources'>
+              </Link> */}
+              {/* <Link href='/resources'>
                 <li className='ml-10 '>
                   <button className='btn relative inline-block font-medium group'>
                     <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
@@ -73,7 +73,7 @@ const NavbarRoute = () => {
                     </span>
                   </button>
                 </li>
-              </Link>
+              </Link> */}
               <li className='ml-10 '>
                 <button className='btn relative inline-block font-medium group'>
                   <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
@@ -105,7 +105,7 @@ const NavbarRoute = () => {
           </div>
           <div className='flex-col py-4'>
             <ul>
-              <Link href='/education'>
+              <Link href='/lesson1'>
                 <li className='py-4 cursor-pointer'>Курс по профайлингу</li>
               </Link>
               <Link href='/emotions'>
@@ -116,9 +116,9 @@ const NavbarRoute = () => {
               <Link href='/lie'>
                 <li className='py-4 cursor-pointer'>Симуляция эмоций</li>
               </Link>
-              <Link href='/tests'>
+              {/* <Link href='/tests'>
                 <li className='py-4 cursor-pointer'>Задания</li>
-              </Link>
+              </Link> */}
               <Link href='/resources'>
                 <li className='py-4 cursor-pointer'>Ресурсы</li>
               </Link>

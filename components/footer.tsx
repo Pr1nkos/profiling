@@ -9,22 +9,23 @@ function Contact() {
           href='#'
           className='flex justify-center items-center text-2xl font-semibold text-gray-900'
         >
-          POLL-I
+          Модуль обучения корпоративному профайлингу
         </a>
+        <p className='my-6 text-gray-500'>
+          Для получения доступа к занятиям вы можете оставить заявку, написав
+          нам.
+        </p>
         <p className='my-6 text-gray-500'>
           Если у вас есть какие-либо вопросы или предложения, не стесняйтесь
           связаться с нами. Наши специалисты всегда готовы помочь вам.
         </p>
         <span className='text-sm text-gray-500 sm:text-center'>
-          © 2023
-          <a href='github.com/' className='hover:underline'>
-            POLL-I™
-          </a>
-          . Все права защищены.
+          © 2023. Все права защищены.
         </span>
-        <div className='p-2'>
+        <div className='p-2 '>
           <button
             type='button'
+            className='bg-blue-800 rounded-sm hover:bg-blue-900 text-white p-4 shadow-md'
             onClick={() => router.push("mailto:email@email.com")}
           >
             ОТПРАВИТЬ ПИСЬМО

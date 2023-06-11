@@ -10,7 +10,7 @@ function DropdownFace() {
         onClick={() => setIsOpen((prev) => !prev)}
         className='w-full items-center justify-between font-bold text-lg text-center rounded-lg border-4 border-transparent  duration-300  flex'
       >
-        Лицевой анализ
+        Материалы занятия
         {!isOpen ? (
           <AiOutlineCaretUp className='h-8' />
         ) : (
@@ -21,27 +21,27 @@ function DropdownFace() {
       {isOpen && (
         <div className='border-solid border-2 bg-blue-800  absolute bottom-20 flex flex-col items-start rounded-sm text-center w-full'>
           <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
-            <Link href='/education/face-analysis/'>
+            <Link href='/lesson1/face-analysis/'>
               <p>Начало модуля</p>
             </Link>
           </div>
           <div className='hover:bg-white hover:text-black cursor-pointer w-full'>
-            <Link href='/education/face-analysis/types-of-lies'>
+            <Link href='/lesson1/face-analysis/types-of-lies'>
               <p>Типы лжи</p>
             </Link>
           </div>
           <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
-            <Link href='/education/face-analysis/emotions'>
+            <Link href='/lesson1/face-analysis/emotions'>
               <p>Эмоции </p>
             </Link>
           </div>
           <div className='hover:bg-white hover:text-black  cursor-pointer w-full'>
-            <Link href='/education/face-analysis/detection-techniques'>
+            <Link href='/lesson1/face-analysis/detection-techniques'>
               <p>Методики</p>
             </Link>
           </div>
           <div className='hover:bg-white hover:text-black cursor-pointer w-full'>
-            <Link href='/education/face-analysis/facs'>
+            <Link href='/lesson1/face-analysis/facs'>
               <p>FACS</p>
             </Link>
           </div>

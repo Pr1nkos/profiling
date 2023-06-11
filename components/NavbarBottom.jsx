@@ -2,7 +2,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import DropdownFace from "./DropdownFace"
-import DropdownPsy from "./DropdownPsy"
+// import DropdownPsy from "./DropdownPsy"
 import { useRouter } from "next/router"
 import Head from "next/head"
 
@@ -43,7 +43,7 @@ const NavbarBottom = () => {
                 </button>
               </li>
 
-              <li className='ml-10 '>
+              {/* <li className='ml-10 '>
                 <button className='btn relative inline-block font-medium group'>
                   <span className='absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
                   <span className='absolute inset-0 w-full h-full bg-blue-800 border-2 border-black '></span>
@@ -51,7 +51,7 @@ const NavbarBottom = () => {
                     <DropdownPsy />
                   </span>
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -74,7 +74,7 @@ const NavbarBottom = () => {
           </div>
           <div className='flex-col py-4'>
             <ul>
-              <Link href='/education'>
+              <Link href='/lesson1'>
                 <li className='py-4 cursor-pointer'>Курс по профайлингу</li>
               </Link>
               <Link href='/emotions'>
@@ -85,12 +85,12 @@ const NavbarBottom = () => {
               <Link href='/lie'>
                 <li className='py-4 cursor-pointer'>Симуляция эмоций</li>
               </Link>
-              <Link href='/tests'>
+              {/* <Link href='/tests'>
                 <li className='py-4 cursor-pointer'>Задания</li>
-              </Link>
-              <Link href='/resources'>
+              </Link> */}
+              {/* <Link href='/resources'>
                 <li className='py-4 cursor-pointer'>Ресурсы</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>
