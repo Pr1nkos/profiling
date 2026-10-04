@@ -1,36 +1,32 @@
-19.05.2023
-1. Перевел все файлы на typescript
-2. На Nodejs не был установлен autoprefixer - fixed
-Проблемы:
-1. Поменять цвета футера - Геша
-2. Стиль страницы логина - Геша
-3. В курсе внизу писать страницу, на которой находишься
-4. Убрать иконку меню
-5. Продумать и сделать страницу кейсов + видео
-Создание проекта в vsc:
+# profiling
 
-1. Создание виртуального пространства в папке с проектом (virtualenv env)
-2. Активация пространства .\env\Scripts\activate
-3. Запуск сервака фронта npm run dev
-4. После изменений в schema.prisma - npx prisma migrate dev --name init (выгрузка таблицы в базу данных)
-5. Запуска prisma - npx prisma studio
-6. Анимации появления текста
-7. Заполнена структура страницы эмоции
-8. Заполнена структура страницы образования
+Учебная веб-платформа по анализу невербального поведения (совместный проект Pr1nkos и SpacyLion): курсы «Анализ лица» (эмоции, FACS, виды лжи, техники выявления) и «Анализ психотипа» (язык тела, кейсы), тесты по упражнениям, авторизация и закрытые разделы по ролям.
 
-История:
+**Стек:** Next.js 13 (Pages Router), React 18, TypeScript, Tailwind CSS + SCSS, NextAuth (credentials), Prisma, PostgreSQL.
 
-1. Сделал структуру сайта на next.js
-2. Прикрутил призму и настроил для работы с postgres
-3. Настроил авторизацию
-4. Настроил защиту в зависимости от роли. Настройка ведется в файле middleware.ts 5 строка ( const protectedPaths = ["/education"];)
+## Запуск
 
-useful commands
+```bash
+cp .env.example .env          # заполните NEXTAUTH_SECRET и DATABASE_URL
+npm install
+npx prisma migrate deploy     # создать таблицы в PostgreSQL
+npm run dev                   # http://localhost:3000
+```
 
-<!--test user  gesha@gesha.com -->
-<!--test pass 1122 -->
+Сборка: `npm run build && npm start`. Шрифт Inter загружается с Google Fonts во время сборки, нужен доступ в интернет.
 
----
+## Структура
 
-npx prisma migrate dev --name init - update scheme of PostGreSQL schemas
-npx prisma studio - add new records to db
+- `pages/` — страницы и API (`api/auth` — NextAuth, `education/` — курсы, `tests.tsx` — тесты)
+- `components/`, `sections/` — UI
+- `prisma/` — схема и миграции
+- `middleware.ts` — защита раздела `/education` по токену и роли
+
+## Известные ограничения
+
+- Проект учебный и незавершённый.
+- Пароли в `authorize` сравниваются как обычные строки, без хеширования. Перед реальным использованием нужно перейти на bcrypt (он уже подключён в `pages/api/login.ts`).
+
+## Лицензия
+
+[ISC](LICENSE)

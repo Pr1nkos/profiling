@@ -32,6 +32,7 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Пароль", type: "password" },
       },
       async authorize(credentials) {
+        if (!credentials) return null
         const dbUser = await prisma.user.findUnique({
           where: {
             email: credentials.username,
@@ -42,7 +43,8 @@ export const authOptions: NextAuthOptions = {
         if (dbUser) {
           console.log(dbUser) //DEBUG
           if (dbUser?.password == credentials.password) {
-            return dbUser
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            return dbUser as any
           }
           // Any object returned will be saved in `user` property of the JWT
         }

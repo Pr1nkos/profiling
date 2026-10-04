@@ -39,7 +39,7 @@ export function getServerSideProps() {
   };
 }
 
-export function getQuestions(exerciseId) {
+export function getQuestions(exerciseId: number) {
   const questions = [
     {
       id: 0,
@@ -94,7 +94,7 @@ export function getQuestions(exerciseId) {
 
   return questions.filter((items) => items.exerciseId === exerciseId);
 }
-function CheckIcon(props) {
+function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" {...props}>
       <circle cx={12} cy={12} r={12} fill="#ff1" opacity="0.5" />
@@ -108,7 +108,8 @@ function CheckIcon(props) {
     </svg>
   );
 }
-export default function Home({ exercises }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function Home({ exercises }: { exercises: any }) {
   const [selected, setSelected] = useState(test[0]);
   const initialState = {
     isExerciseShown: false,
@@ -118,10 +119,11 @@ export default function Home({ exercises }) {
     score: 0,
   };
 
-  const [state, setState] = useState(initialState);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [state, setState] = useState<any>(initialState);
   const { isExerciseShown, questions, isExerciseDone, score } = state;
 
-  const showExercise = (id) => {
+  const showExercise = (id: number) => {
     setState({
       ...state,
       exerciseId: id,
@@ -132,7 +134,7 @@ export default function Home({ exercises }) {
   const hideExercise = () => {
     setState(initialState);
   };
-  const finishTest = (score) => {
+  const finishTest = (score: number) => {
     setState({
       ...state,
       isExerciseDone: true,

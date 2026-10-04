@@ -8,6 +8,10 @@ import Head from "next/head";
 
 const NavbarBottom = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [pageTitle, setPageTitle] = useState("");
+  useEffect(() => {
+    setPageTitle(document.title);
+  }, []);
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
@@ -29,7 +33,7 @@ const NavbarBottom = () => {
             </button>
           </Link>
           <div>
-            <p className="uppercase">{document.title}</p>
+            <p className="uppercase">{pageTitle}</p>
           </div>
           <div className="hidden sm:flex">
             <ul className="hidden sm:flex">

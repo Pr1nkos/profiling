@@ -13,7 +13,7 @@ export async function middleware(request: NextRequest, _next: NextFetchEvent) {
       url.searchParams.set("callbackUrl", encodeURI(request.url));
       return NextResponse.redirect(url);
     }
-    if (token.role !== "ADMIN") {
+    if ((token.role as string) !== "ADMIN") {
       const url = new URL(`/admin`, request.url);
       return NextResponse.rewrite(url);
     }
